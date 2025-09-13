@@ -107,7 +107,12 @@ The site uses a custom professional theme with:
 This site is part of the Muscadine ecosystem:
 - **Health Dashboard**: `https://health.nicholasconnelly.box`
 - **DeFi Dashboard**: `https://defi.nicholasconnelly.box`
-- **Main Site**: `https://muscadine.box`
+
+## 🌐 Domain Configuration
+
+This repository serves the following domains:
+- **Primary**: `https://nicholasconnelly.box`
+- **WWW**: `https://www.nicholasconnelly.box`
 
 ## 📄 Legal Pages
 
