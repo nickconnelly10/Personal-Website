@@ -1,0 +1,23 @@
+{
+  "name": "Nicholas Connelly - Portfolio",
+  "short_name": "Nicholas Connelly",
+  "description": "Dedicated to all forms of creation. Building software, creating health solutions, and writing to make the world a little better.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "personal", "business"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
