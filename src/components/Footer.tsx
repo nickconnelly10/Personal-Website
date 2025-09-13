@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
               {[
                 { href: "https://health.nicholasconnelly.box", label: "Health Platform", description: "Evidence-based health protocols" },
                 { href: "https://defi.nicholasconnelly.box", label: "DeFi Dashboard", description: "Decentralized finance tools" },
-                { href: "https://muscadine.box", label: "Muscadine Protocol", description: "Open-source platform" },
+                { href: "https://defi.muscadine.box", label: "Muscadine Protocol", description: "Open-source platform" },
                 { href: "https://nicholasconnelly.substack.com/", label: "Writing", description: "Health & finance articles" }
               ].map((link) => (
                 <motion.a
