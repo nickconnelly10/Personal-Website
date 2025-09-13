@@ -100,7 +100,7 @@ const Hero: React.FC = () => {
           >
             <motion.a 
               href="https://health.nicholasconnelly.box"
-              className="btn-primary text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 group relative overflow-hidden"
+              className="btn-primary text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 group relative overflow-hidden shadow-lg hover:shadow-xl"
               target="_blank"
               rel="noopener noreferrer"
               variants={buttonVariants}
@@ -108,13 +108,18 @@ const Hero: React.FC = () => {
               whileTap="tap"
               transition={{ duration: 0.2, ease: "easeInOut" }}
             >
-              <span className="relative z-10">Health Platform</span>
+              <span className="relative z-10 flex items-center gap-2">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                Health Platform
+              </span>
               <div className="absolute inset-0 bg-gradient-to-r from-gold-700 to-gold-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </motion.a>
             
             <motion.a 
               href="https://defi.nicholasconnelly.box"
-              className="btn-primary text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 group relative overflow-hidden"
+              className="btn-primary text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 group relative overflow-hidden shadow-lg hover:shadow-xl"
               target="_blank"
               rel="noopener noreferrer"
               variants={buttonVariants}
@@ -122,13 +127,18 @@ const Hero: React.FC = () => {
               whileTap="tap"
               transition={{ duration: 0.2, ease: "easeInOut" }}
             >
-              <span className="relative z-10">DeFi Dashboard</span>
+              <span className="relative z-10 flex items-center gap-2">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                DeFi Dashboard
+              </span>
               <div className="absolute inset-0 bg-gradient-to-r from-gold-700 to-gold-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </motion.a>
             
             <motion.a 
               href="https://nicholasconnelly.substack.com/"
-              className="btn-secondary text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 group relative overflow-hidden"
+              className="btn-secondary text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 group relative overflow-hidden shadow-md hover:shadow-lg"
               target="_blank"
               rel="noopener noreferrer"
               variants={buttonVariants}
@@ -136,7 +146,12 @@ const Hero: React.FC = () => {
               whileTap="tap"
               transition={{ duration: 0.2, ease: "easeInOut" }}
             >
-              <span className="relative z-10">Read Articles</span>
+              <span className="relative z-10 flex items-center gap-2">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                Read Articles
+              </span>
               <div className="absolute inset-0 bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </motion.a>
           </motion.div>
