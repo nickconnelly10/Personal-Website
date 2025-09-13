@@ -2,6 +2,7 @@ import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
 import About from './components/About'
+import Photos from './components/Photos'
 import Footer from './components/Footer'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Projects />
         <About />
+        <Photos />
       </main>
       <Footer />
     </div>
