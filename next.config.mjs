@@ -6,7 +6,11 @@ const nextConfig = {
   },
   trailingSlash: true,
   output: 'export',
-  distDir: 'dist'
+  distDir: 'dist',
+  // Disable image optimization for static export
+  experimental: {
+    optimizePackageImports: ['chart.js', 'react-chartjs-2']
+  }
 };
 
 export default nextConfig;
