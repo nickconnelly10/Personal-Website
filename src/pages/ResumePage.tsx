@@ -30,11 +30,31 @@ const ResumePage: React.FC = () => {
 
           <div className="w-full">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="/resume/resume.pdf#toolbar=1&navpanes=1&scrollbar=1"
+              <object
+                data="/resume/resume.pdf#toolbar=1&navpanes=1&scrollbar=1"
+                type="application/pdf"
                 className="w-full h-[800px] border-0"
                 title="Nicholas Connelly Resume"
-              />
+              >
+                <div className="flex flex-col items-center justify-center h-[800px] text-gray-600">
+                  <svg className="w-16 h-16 mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <p className="text-lg font-medium mb-2">PDF Preview Not Available</p>
+                  <p className="text-sm text-center mb-4">Your browser doesn't support PDF preview.</p>
+                  <a
+                    href="/resume/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Open PDF in New Tab
+                  </a>
+                </div>
+              </object>
             </div>
           </div>
         </div>
