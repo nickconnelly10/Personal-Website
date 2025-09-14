@@ -62,7 +62,7 @@ const Navigation: React.FC = () => {
         {/* Desktop links */}
         <div className="hidden md:flex items-center space-x-8">
           {[
-            { href: "#projects", label: "Projects" },
+            { href: "#resume", label: "Resume" },
             { href: "https://health.nicholasconnelly.box", label: "Health", external: true },
             { href: "https://defi.nicholasconnelly.box", label: "DeFi", external: true },
             { href: "https://nicholasconnelly.substack.com/", label: "Writing", external: true },
@@ -127,7 +127,7 @@ const Navigation: React.FC = () => {
           >
             <div className="max-w-6xl mx-auto px-4 py-3 space-y-3">
               {[
-                { href: "#projects", label: "Projects" },
+                { href: "#resume", label: "Resume" },
                 { href: "https://health.nicholasconnelly.box", label: "Health", external: true },
                 { href: "https://defi.nicholasconnelly.box", label: "DeFi", external: true },
                 { href: "https://nicholasconnelly.substack.com/", label: "Writing", external: true },
