@@ -46,7 +46,7 @@ const About: React.FC = () => {
           <motion.h2 
             className="section-title text-center mb-12 relative z-10"
             variants={itemVariants}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
           >
             The deeper story behind<br />
             <span className="gradient-text">the creator</span>
@@ -76,7 +76,7 @@ const About: React.FC = () => {
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
                 custom={index}
-                transition={{ delay: index * 0.1, duration: 0.6, ease: "easeOut" }}
+                transition={{ delay: index * 0.05, duration: 0.3, ease: "easeOut" }}
               >
                 {paragraph}
               </motion.p>
@@ -87,7 +87,7 @@ const About: React.FC = () => {
             className="text-center mt-12 relative z-10"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
           >
             <motion.a
               href="#contact"

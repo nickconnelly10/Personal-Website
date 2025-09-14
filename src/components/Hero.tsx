@@ -13,15 +13,15 @@ const Hero: React.FC = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1
+        staggerChildren: 0.1,
+        delayChildren: 0.05
       }
     }
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0 }
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
   }
 
   const buttonVariants = {
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
         <motion.h1 
           className="text-hero gradient-text mb-8"
           variants={itemVariants}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
         >
           Nicholas Connelly
         </motion.h1>
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
         <motion.p 
           className="text-display text-gray-700 max-w-4xl mx-auto mb-12"
           variants={itemVariants}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
         >
           Dedicated to all forms of creation.<br />
           <span className="text-gold-600 font-semibold">Powered by coffee...</span>
@@ -79,12 +79,12 @@ const Hero: React.FC = () => {
         <motion.div 
           className="space-y-8"
           variants={itemVariants}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
           >
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
               I build software to<br />
@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
           >
             <motion.a 
               href="https://health.nicholasconnelly.box"
