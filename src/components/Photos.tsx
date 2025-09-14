@@ -11,42 +11,42 @@ const Photos: React.FC = () => {
 
   const photos = [
     {
-      src: "/images/IMG_0456.jpeg",
-      alt: "The Nest - UGA Run Club group photo",
-      title: "The Nest",
-      description: "UGA Run Club I founded - Building community through running",
-      category: "Leadership"
-    },
-    {
-      src: "/images/IMG_2406.jpeg", 
-      alt: "Community building and health promotion",
-      title: "Community Building",
-      description: "Promoting health and fitness through community engagement",
-      category: "Community"
-    },
-    {
-      src: "/images/IMG_4021.jpeg",
-      alt: "Growing community and leadership",
-      title: "Growing Community",
-      description: "The Nest running club community continues to grow",
-      category: "Community"
-    },
-    {
-      src: "/images/IMG_4045.jpeg",
-      alt: "Medical mission and global health",
-      title: "Global Health Impact",
-      description: "Medical mission work and global health initiatives",
-      category: "Medicine"
-    },
-    {
-      src: "/images/IMG_6209.jpeg",
+      src: "/images/nicholas-connelly-personal-photo.jpeg",
       alt: "Personal photo of Nicholas Connelly",
       title: "About Me",
       description: "Building the future of health and technology",
       category: "Personal"
     },
     {
-      src: "/images/20250306_162851_3B28E0.jpeg",
+      src: "/images/the-nest-run-club-group-photo.jpeg",
+      alt: "The Nest - UGA Run Club group photo",
+      title: "The Nest",
+      description: "UGA Run Club I founded - Building community through running",
+      category: "Leadership"
+    },
+    {
+      src: "/images/medical-mission-global-health.jpeg", 
+      alt: "Medical mission and global health",
+      title: "Global Health Impact",
+      description: "Medical mission work and global health initiatives",
+      category: "Medicine"
+    },
+    {
+      src: "/images/community-building-health-promotion.jpeg",
+      alt: "Community building and health promotion",
+      title: "Community Building",
+      description: "Promoting health and fitness through community engagement",
+      category: "Community"
+    },
+    {
+      src: "/images/growing-community-leadership.jpeg",
+      alt: "Growing community and leadership",
+      title: "Growing Community",
+      description: "The Nest running club community continues to grow",
+      category: "Community"
+    },
+    {
+      src: "/images/additional-community-service-work.jpeg",
       alt: "Additional community work",
       title: "Community Service",
       description: "Additional community service and leadership activities",
@@ -84,7 +84,7 @@ const Photos: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="section-title text-center mb-16">
-            Gallery
+            Meet Nicholas
           </h2>
           <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto mb-12">
             Building communities, serving others, and creating impact through leadership and service
