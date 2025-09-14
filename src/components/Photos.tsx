@@ -10,39 +10,46 @@ const Photos: React.FC = () => {
 
   const photos = [
     {
-      src: "/images/nest-group-1.jpg",
-      alt: "The Nest - UGA Run Club group photo at Wander mural",
+      src: "/images/IMG_0456.jpeg",
+      alt: "The Nest - UGA Run Club group photo",
       title: "The Nest",
-      description: "UGA Run Club I founded - Group photo at the Wander mural",
+      description: "UGA Run Club I founded - Building community through running",
       category: "Leadership"
     },
     {
-      src: "/images/nest-niche.jpg", 
-      alt: "The Nest - NICHE brand promotion event",
+      src: "/images/IMG_2406.jpeg", 
+      alt: "Community building and health promotion",
       title: "Community Building",
-      description: "Promoting health and fitness through The Nest",
+      description: "Promoting health and fitness through community engagement",
       category: "Community"
     },
     {
-      src: "/images/nest-group-2.jpg",
-      alt: "The Nest - Large group photo on campus",
+      src: "/images/IMG_4021.jpeg",
+      alt: "Growing community and leadership",
       title: "Growing Community",
       description: "The Nest running club community continues to grow",
       category: "Community"
     },
     {
-      src: "/images/medlife-cusco.jpg",
-      alt: "Medical trip to Cusco, Peru with MEDLIFE",
+      src: "/images/IMG_4045.jpeg",
+      alt: "Medical mission and global health",
       title: "Global Health Impact",
-      description: "Medical mission trip to Cusco, Peru with MEDLIFE",
+      description: "Medical mission work and global health initiatives",
       category: "Medicine"
     },
     {
-      src: "/images/personal-photo.jpg",
+      src: "/images/IMG_6209.jpeg",
       alt: "Personal photo of Nicholas Connelly",
       title: "About Me",
       description: "Building the future of health and technology",
       category: "Personal"
+    },
+    {
+      src: "/images/20250306_162851_3B28E0.jpeg",
+      alt: "Additional community work",
+      title: "Community Service",
+      description: "Additional community service and leadership activities",
+      category: "Service"
     }
   ]
 
@@ -67,7 +74,7 @@ const Photos: React.FC = () => {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           ref={ref}
@@ -76,7 +83,7 @@ const Photos: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="section-title text-center mb-16">
-            Beyond the Code
+            Gallery
           </h2>
           <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto mb-12">
             Building communities, serving others, and creating impact through leadership and service
@@ -84,7 +91,7 @@ const Photos: React.FC = () => {
         </motion.div>
         
         <motion.div 
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -92,40 +99,26 @@ const Photos: React.FC = () => {
           {photos.map((photo, index) => (
             <motion.div 
               key={index} 
-              className="group relative"
+              className="group relative overflow-hidden rounded-lg"
               variants={itemVariants}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <motion.div 
-                className="card hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+                className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 variants={cardVariants}
                 whileHover="hover"
                 transition={{ duration: 0.3, ease: "easeOut" }}
               >
-                {/* Image */}
-                <div className="aspect-square overflow-hidden rounded-t-lg">
-                  <img 
-                    src={photo.src} 
-                    alt={photo.alt}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                
-                {/* Content */}
-                <div className="p-6">
-                  {/* Category badge */}
-                  <div className="mb-3">
-                    <span className="inline-block bg-gradient-to-r from-gold-500 to-gold-600 text-white text-sm font-medium px-3 py-1 rounded-full">
-                      {photo.category}
-                    </span>
+                <img 
+                  src={photo.src} 
+                  alt={photo.alt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end">
+                  <div className="p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 className="text-lg font-semibold mb-1">{photo.title}</h3>
+                    <p className="text-sm opacity-90">{photo.description}</p>
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-800 transition-colors duration-300">
-                    {photo.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {photo.description}
-                  </p>
                 </div>
               </motion.div>
             </motion.div>

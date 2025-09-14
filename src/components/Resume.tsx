@@ -25,7 +25,7 @@ const Resume: React.FC = () => {
   }
 
   return (
-    <section id="resume" className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section id="resume" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <motion.div
           ref={ref}
@@ -37,7 +37,7 @@ const Resume: React.FC = () => {
             Resume
           </h2>
           <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto mb-12">
-            Download my resume to learn more about my experience, education, and skills
+            My professional experience, skills, and achievements in medicine and software development
           </p>
         </motion.div>
         
@@ -48,42 +48,20 @@ const Resume: React.FC = () => {
           animate={inView ? "visible" : "hidden"}
         >
           <motion.div 
-            className="card hover:shadow-2xl transition-all duration-300 max-w-md w-full"
+            className="text-center"
             variants={itemVariants}
-            whileHover={{ y: -8, scale: 1.02 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <div className="p-8 text-center">
-              {/* PDF Icon */}
-              <div className="mb-6">
-                <svg 
-                  className="w-16 h-16 mx-auto text-gold-600" 
-                  fill="currentColor" 
-                  viewBox="0 0 20 20"
-                >
-                  <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
-                </svg>
-              </div>
-              
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Nicholas Connelly
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Medical Student & Developer
-              </p>
-              
-              <a
-                href="/Nicholas Connelly Resume September 2025.docx.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-white font-medium rounded-lg hover:from-gold-600 hover:to-gold-700 transition-all duration-300 transform hover:scale-105"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                Download Resume
-              </a>
-            </div>
+            <a
+              href="/Nicholas Connelly Resume September 2025.docx.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 text-lg"
+            >
+              <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download PDF
+            </a>
           </motion.div>
         </motion.div>
       </div>
