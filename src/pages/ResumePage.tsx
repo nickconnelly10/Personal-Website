@@ -16,7 +16,7 @@ const ResumePage: React.FC = () => {
               My professional experience, skills, and achievements in medicine and software development
             </p>
             <a
-              href="/Nicholas Connelly Resume September 2025.docx.pdf"
+              href="/resume/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition-all duration-300"
@@ -31,7 +31,7 @@ const ResumePage: React.FC = () => {
           <div className="w-full">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="/Nicholas Connelly Resume September 2025.docx.pdf#toolbar=1&navpanes=1&scrollbar=1"
+                src="/resume/resume.pdf#toolbar=1&navpanes=1&scrollbar=1"
                 className="w-full h-[800px] border-0"
                 title="Nicholas Connelly Resume"
               />
