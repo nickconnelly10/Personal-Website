@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import SubstackArticles from '@/components/SubstackArticles';
+import SubstackArticles from '../components/SubstackArticles';
 
 export default function Home() {
   const [showScrollArrow, setShowScrollArrow] = useState(true);
