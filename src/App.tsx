@@ -1,13 +1,32 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation'
+import Hero from './components/Hero'
+import About from './components/About'
+import Skills from './components/Skills'
+import Timeline from './components/Timeline'
+import Photos from './components/Photos'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import ScrollProgress from './components/ScrollProgress'
+import BackToTop from './components/BackToTop'
 import ErrorBoundary from './components/ErrorBoundary'
+import ResumePage from './pages/ResumePage'
 
-function TestPage() {
+function HomePage() {
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Nicholas Connelly</h1>
-        <p className="text-xl text-gray-600">Site is working!</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <ScrollProgress />
+      <Navigation />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Timeline />
+        <Photos />
+        <Contact />
+      </main>
+      <Footer />
+      <BackToTop />
     </div>
   )
 }
@@ -17,8 +36,8 @@ function App() {
     <ErrorBoundary>
       <Router>
         <Routes>
-          <Route path="/" element={<TestPage />} />
-          <Route path="/resume" element={<TestPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/resume" element={<ResumePage />} />
         </Routes>
       </Router>
     </ErrorBoundary>
