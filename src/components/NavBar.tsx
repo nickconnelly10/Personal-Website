@@ -82,18 +82,18 @@ const NavBar = () => {
           >
             Writing
           </Link>
-          <Link 
-            href="/contact" 
-            className={`transition-colors duration-200 ${
-              isHomePage 
-                ? (isScrolled 
-                    ? 'text-gray-600 hover:text-gray-800' 
-                    : 'text-white hover:text-gray-200')
-                : 'text-gray-600 hover:text-gray-800'
-            }`}
-          >
-            Contact
-          </Link>
+                 <Link
+                   href="/contact"
+                   className={`transition-colors duration-200 ${
+                     isHomePage
+                       ? (isScrolled
+                           ? 'text-gray-600 hover:text-gray-800'
+                           : 'text-white hover:text-gray-200')
+                       : 'text-gray-600 hover:text-gray-800'
+                   }`}
+                 >
+                   Connect
+                 </Link>
           <Link 
             href="/resume" 
             className={`transition-colors duration-200 ${
@@ -166,13 +166,13 @@ const NavBar = () => {
             >
               Writing
             </Link>
-            <Link 
-              href="/contact" 
-              onClick={closeMobileMenu}
-              className="block px-6 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-200"
-            >
-              Contact
-            </Link>
+                   <Link
+                     href="/contact"
+                     onClick={closeMobileMenu}
+                     className="block px-6 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-200"
+                   >
+                     Connect
+                   </Link>
             <Link 
               href="/resume" 
               onClick={closeMobileMenu}

@@ -224,6 +224,19 @@ export default function Home() {
                   <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Community</span>
                   <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Fitness</span>
                 </div>
+                <div className='mt-4 pt-4 border-t border-gray-100'>
+                  <a
+                    href="https://drive.google.com/drive/u/0/folders/1bMajNaE_zwYUOmwqv_-Lm3UzFlw4wsYY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className='text-sm text-gold-600 hover:text-gold-800 transition-colors duration-200 underline flex items-center gap-1'
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    View NEST Photos
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -239,6 +252,19 @@ export default function Home() {
                   <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Health Education</span>
                   <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Prevention</span>
                   <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Community</span>
+                </div>
+                <div className='mt-4 pt-4 border-t border-gray-100'>
+                  <a
+                    href="https://drive.google.com/drive/u/0/folders/1bMajNaE_zwYUOmwqv_-Lm3UzFlw4wsYY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className='text-sm text-gold-600 hover:text-gold-800 transition-colors duration-200 underline flex items-center gap-1'
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    View NEST Photos
+                  </a>
                 </div>
               </div>
             </div>
@@ -330,15 +356,15 @@ export default function Home() {
             
             {/* Contact Button */}
             <div className='text-center mt-12'>
-              <a
-                href='/contact'
-                className='inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors duration-200 font-medium'
-              >
-                Get In Touch
-                <svg className='ml-2 w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' />
-                </svg>
-              </a>
+                   <a
+                     href='/contact'
+                     className='inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors duration-200 font-medium'
+                   >
+                     Connect
+                     <svg className='ml-2 w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                       <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' />
+                     </svg>
+                   </a>
             </div>
         </div>
       </section>

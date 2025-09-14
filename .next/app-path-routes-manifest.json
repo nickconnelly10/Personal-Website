@@ -2,6 +2,6 @@
   "/_not-found/page": "/_not-found",
   "/contact/page": "/contact",
   "/gallery/page": "/gallery",
-  "/page": "/",
-  "/resume/page": "/resume"
+  "/resume/page": "/resume",
+  "/page": "/"
 }
