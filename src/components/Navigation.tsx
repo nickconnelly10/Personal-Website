@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import ThemeToggle from './ThemeToggle'
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -61,6 +62,7 @@ const Navigation: React.FC = () => {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center space-x-8">
+          <ThemeToggle />
           {[
             { href: "#resume", label: "Resume" },
             { href: "https://health.nicholasconnelly.box", label: "Health", external: true },
@@ -126,6 +128,9 @@ const Navigation: React.FC = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <div className="max-w-6xl mx-auto px-4 py-3 space-y-3">
+              <div className="flex justify-center mb-4">
+                <ThemeToggle />
+              </div>
               {[
                 { href: "#resume", label: "Resume" },
                 { href: "https://health.nicholasconnelly.box", label: "Health", external: true },

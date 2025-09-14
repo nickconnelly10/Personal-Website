@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import LazyImage from './LazyImage'
 
 const Photos: React.FC = () => {
   const [ref, inView] = useInView({
@@ -109,10 +110,11 @@ const Photos: React.FC = () => {
                 whileHover="hover"
                 transition={{ duration: 0.3, ease: "easeOut" }}
               >
-                <img 
+                <LazyImage 
                   src={photo.src} 
                   alt={photo.alt}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full group-hover:scale-105 transition-transform duration-500"
+                  skeletonClassName="rounded-lg"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end">
                   <div className="p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">

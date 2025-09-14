@@ -53,21 +53,55 @@
       "description": "Dedicated to all forms of creation. Building software, creating health solutions, and writing to make the world a little better.",
       "jobTitle": "Medical Student & Developer",
       "alumniOf": "University of Georgia",
+      "knowsAbout": ["Medicine", "Software Development", "Health Technology", "DeFi", "Bitcoin", "React", "TypeScript", "Python"],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Medical Student",
+        "occupationLocation": {
+          "@type": "Place",
+          "name": "University of Georgia"
+        }
+      },
       "sameAs": [
         "https://twitter.com/nicklutk",
         "https://nicholasconnelly.substack.com/",
-        "https://github.com/nickconnelly10"
+        "https://github.com/nickconnelly10",
+        "https://health.nicholasconnelly.box",
+        "https://defi.nicholasconnelly.box"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "nickconnelly10@gmail.com",
         "contactType": "personal"
-      }
+      },
+      "image": "https://nicholasconnelly.box/images/IMG_6209.jpeg"
     }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
     </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
