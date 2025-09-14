@@ -1,15 +1,15 @@
-const CACHE_NAME = 'nicholasconnelly-box-v2'
+const CACHE_NAME = 'nicholasconnelly-box-v3'
 const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
   '/favicon.svg',
-  '/images/IMG_0456.jpeg',
-  '/images/IMG_2406.jpeg',
-  '/images/IMG_4021.jpeg',
-  '/images/IMG_4045.jpeg',
-  '/images/IMG_6209.jpeg',
-  '/images/20250306_162851_3B28E0.jpeg'
+  '/images/nicholas-connelly-personal-photo.jpeg',
+  '/images/the-nest-run-club-group-photo.jpeg',
+  '/images/medical-mission-global-health.jpeg',
+  '/images/community-building-health-promotion.jpeg',
+  '/images/growing-community-leadership.jpeg',
+  '/images/additional-community-service-work.jpeg'
 ]
 
 self.addEventListener('install', (event) => {
