@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
   }
 
   return (
-    <footer id="contact" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-gold-600 rounded-full opacity-5 blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-gold-500 rounded-full opacity-5 blur-3xl"></div>
