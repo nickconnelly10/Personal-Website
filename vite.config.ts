@@ -22,12 +22,15 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000
   },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'framer-motion', 'react-intersection-observer']
+    include: ['react', 'react-dom', 'framer-motion', 'react-intersection-observer', 'react-router-dom']
   },
   esbuild: {
     target: 'esnext',
     minifyIdentifiers: true,
     minifySyntax: true,
     minifyWhitespace: true
+  },
+  server: {
+    historyApiFallback: true
   }
 })
