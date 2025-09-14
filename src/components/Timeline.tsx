@@ -69,7 +69,7 @@ const Timeline: React.FC = () => {
   }
 
   return (
-    <section className="py-20 bg-white dark:bg-gray-800">
+    <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <motion.div
           ref={ref}
@@ -80,7 +80,7 @@ const Timeline: React.FC = () => {
           <h2 className="section-title text-center mb-16">
             My Journey
           </h2>
-          <p className="text-center text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto mb-12">
+          <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto mb-12">
             Key milestones in my path toward creating meaningful impact in health and technology
           </p>
         </motion.div>
@@ -92,7 +92,7 @@ const Timeline: React.FC = () => {
           animate={inView ? "visible" : "hidden"}
         >
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-700"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200"></div>
           
           {timelineItems.map((item, index) => (
             <motion.div
@@ -101,25 +101,25 @@ const Timeline: React.FC = () => {
               variants={itemVariants}
             >
               {/* Timeline dot */}
-              <div className="relative z-10 flex-shrink-0 w-16 h-16 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
+              <div className="relative z-10 flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center">
                 <div className={`w-4 h-4 rounded-full ${getTypeColor(item.type)}`}></div>
               </div>
               
               {/* Content */}
               <div className="ml-6 flex-1">
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-sm">
+                <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
                   <div className="flex items-center mb-2">
-                    <span className="text-2xl font-bold text-gold-600 dark:text-gold-400 mr-4">
+                    <span className="text-2xl font-bold text-gold-600 mr-4">
                       {item.year}
                     </span>
                     <span className={`px-2 py-1 text-xs font-medium text-white rounded-full ${getTypeColor(item.type)}`}>
                       {item.type.toUpperCase()}
                     </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600">
                     {item.description}
                   </p>
                 </div>

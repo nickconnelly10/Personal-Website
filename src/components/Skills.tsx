@@ -57,7 +57,7 @@ const Skills: React.FC = () => {
   }
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           ref={ref}
@@ -68,7 +68,7 @@ const Skills: React.FC = () => {
           <h2 className="section-title text-center mb-16">
             Skills & Technologies
           </h2>
-          <p className="text-center text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto mb-12">
+          <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto mb-12">
             A comprehensive toolkit for building innovative solutions across technology, medicine, and finance
           </p>
         </motion.div>
@@ -82,17 +82,17 @@ const Skills: React.FC = () => {
           {skills.map((skillGroup, index) => (
             <motion.div
               key={skillGroup.category}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               variants={itemVariants}
             >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
                 {skillGroup.category}
               </h3>
               <div className="flex flex-wrap gap-2 justify-center">
                 {skillGroup.items.map((skill, skillIndex) => (
                   <motion.span
                     key={skill}
-                    className="px-3 py-1 bg-gold-100 dark:bg-gold-900 text-gold-800 dark:text-gold-200 text-sm font-medium rounded-full"
+                    className="px-3 py-1 bg-gold-100 text-gold-800 text-sm font-medium rounded-full"
                     variants={skillVariants}
                     whileHover={{ scale: 1.05 }}
                     transition={{ delay: skillIndex * 0.05 }}
