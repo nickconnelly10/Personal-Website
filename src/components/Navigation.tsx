@@ -64,7 +64,7 @@ const Navigation: React.FC = () => {
           {[
             { href: "/resume", label: "Resume" },
             { href: "https://health.nicholasconnelly.box", label: "Health", external: true },
-            { href: "https://defi.nicholasconnelly.box", label: "DeFi", external: true },
+            { href: "https://muscadine.box", label: "DeFi", external: true },
             { href: "https://nicholasconnelly.substack.com/", label: "Writing", external: true },
             { href: "#contact", label: "Contact" }
           ].map((link) => (
@@ -129,7 +129,7 @@ const Navigation: React.FC = () => {
               {[
                 { href: "/resume", label: "Resume" },
                 { href: "https://health.nicholasconnelly.box", label: "Health", external: true },
-                { href: "https://defi.nicholasconnelly.box", label: "DeFi", external: true },
+                { href: "https://muscadine.box", label: "DeFi", external: true },
                 { href: "https://nicholasconnelly.substack.com/", label: "Writing", external: true },
                 { href: "#contact", label: "Contact" }
               ].map((link, index) => (

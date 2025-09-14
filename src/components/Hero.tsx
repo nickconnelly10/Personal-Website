@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
             </motion.a>
             
             <motion.a 
-              href="https://defi.nicholasconnelly.box"
+              href="https://muscadine.box"
               className="btn-primary text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 group relative overflow-hidden shadow-lg hover:shadow-xl"
               target="_blank"
               rel="noopener noreferrer"
