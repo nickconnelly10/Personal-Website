@@ -1,165 +1,132 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+'use client';
 
-const Footer: React.FC = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.1,
-    triggerOnce: true
-  })
+import Link from 'next/link';
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1
-      }
-    }
-  }
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0 }
-  }
-
-  const linkVariants = {
-    hover: { x: 5 }
-  }
+  const footerLinks = {
+    'Navigation': [
+      { name: 'Home', href: '/' },
+      { name: 'Projects', href: '/#projects' },
+      { name: 'Community', href: '/#community' },
+      { name: 'Writing', href: '/#writing' },
+      { name: 'Contact', href: '/contact' },
+      { name: 'Resume', href: '/resume' }
+    ],
+    'Connect': [
+      { name: 'GitHub', href: 'https://github.com/nickconnelly10', external: true },
+      { name: 'Twitter', href: 'https://twitter.com/nicklutk', external: true },
+      { name: 'Substack', href: 'https://nicholasconnelly.substack.com', external: true },
+      { name: 'Email', href: 'mailto:nickconnelly10@gmail.com', external: true }
+    ],
+    'Projects': [
+      { name: 'Health Platform', href: 'https://health.nicholasconnelly.box', external: true },
+      { name: 'DeFi Dashboard', href: 'https://muscadine.box', external: true },
+      { name: 'Writing', href: 'https://nicholasconnelly.substack.com', external: true }
+    ]
+  };
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-gold-600 rounded-full opacity-5 blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-gold-500 rounded-full opacity-5 blur-3xl"></div>
-      
-      <div className="max-w-6xl mx-auto px-4 relative z-10">
-        <motion.div 
-          ref={ref}
-          className="grid md:grid-cols-3 gap-12"
-          variants={containerVariants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-        >
-          {/* About Section */}
-          <motion.div 
-            variants={itemVariants}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+    <footer className="bg-gray-800 text-white">
+      <div className="max-w-6xl mx-auto px-8 py-12">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Brand Section */}
+          <div className="md:col-span-1">
+            <Link href="/" className="text-2xl font-medium hover:text-gray-300 transition-colors duration-200">
               Nicholas Connelly
-            </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            </Link>
+            <p className="mt-4 text-gray-400 text-sm leading-relaxed">
               Dedicated to all forms of creation. Building software, creating health solutions, and writing to make the world a little better.
             </p>
-            <div className="flex space-x-4">
-              {[
-                { href: "https://github.com/nickconnelly10", label: "GitHub", icon: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" },
-                { href: "https://www.linkedin.com/in/nicholas-connelly-8365722a4/", label: "LinkedIn", icon: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" },
-                { href: "https://www.instagram.com/nickkconnelly/", label: "Instagram", icon: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" },
-                { href: "https://twitter.com/nicklutk", label: "Twitter", icon: "M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" },
-                { href: "https://nicholasconnelly.substack.com/", label: "Substack", icon: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" },
-                { href: "mailto:nickconnelly10@gmail.com", label: "Email", icon: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" }
-              ].map((social) => (
-                <motion.a
-                  key={social.label}
-                  href={social.href}
-                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gold-600 transition-colors duration-300 group"
-                  target={social.href.startsWith('mailto:') ? undefined : "_blank"}
-                  rel={social.href.startsWith('mailto:') ? undefined : "noopener noreferrer"}
-                  variants={linkVariants}
-                  whileHover="hover"
-                  transition={{ duration: 0.2, ease: "easeInOut" }}
-                >
-                  <svg className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={social.icon} />
-                  </svg>
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
+          </div>
           
-          {/* Navigation */}
-          <motion.div 
-            variants={itemVariants}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <h4 className="text-lg font-semibold mb-4 text-gold-400">Navigation</h4>
-            <ul className="space-y-3">
-              {[
-                { href: "/", label: "Home" },
-                { href: "https://health.nicholasconnelly.box", label: "Health", external: true },
-                { href: "https://muscadine.box", label: "DeFi", external: true },
-                { href: "https://nicholasconnelly.substack.com/", label: "Writing", external: true },
-                { href: "#contact", label: "Contact" }
-              ].map((link) => (
-                <motion.li key={link.label}>
-                  <motion.a 
-                    href={link.href} 
-                    className="text-gray-300 hover:text-white transition-colors duration-200 relative group block"
-                    target={link.external ? "_blank" : undefined}
-                    rel={link.external ? "noopener noreferrer" : undefined}
-                    variants={linkVariants}
-                    whileHover="hover"
-                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                  >
-                    {link.label}
-                    <span className="absolute left-0 top-1/2 w-0 h-0.5 bg-gold-600 group-hover:w-full transition-all duration-300 transform -translate-y-1/2"></span>
-                  </motion.a>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-          
-          {/* Connect */}
-          <motion.div 
-            variants={itemVariants}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <h4 className="text-lg font-semibold mb-4 text-gold-400">Quick Links</h4>
-            <div className="space-y-3">
-              {[
-                { href: "https://health.nicholasconnelly.box", label: "Health Platform", description: "Evidence-based health protocols" },
-                { href: "https://muscadine.box", label: "Muscadine Protocol", description: "Financial self-sovereignty platform" },
-                { href: "https://nicholasconnelly.substack.com/", label: "Writing", description: "Health & finance articles" }
-              ].map((link) => (
-                <motion.a
-                  key={link.label}
-                  href={link.href}
-                  className="block p-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors duration-300 group"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variants={linkVariants}
-                  whileHover="hover"
-                  transition={{ duration: 0.2, ease: "easeInOut" }}
-                >
-                  <div className="font-medium text-white group-hover:text-gold-400 transition-colors duration-300">
-                    {link.label}
-                  </div>
-                  <div className="text-sm text-gray-400 mt-1">
-                    {link.description}
-                  </div>
-                </motion.a>
-              ))}
+          {/* Links Sections */}
+          {Object.entries(footerLinks).map(([category, links]) => (
+            <div key={category}>
+              <h3 className="text-lg font-medium mb-4">{category}</h3>
+              <ul className="space-y-2">
+                {links.map((link) => (
+                  <li key={link.name}>
+                    {'external' in link && link.external ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                      >
+                        {link.name}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </motion.div>
-        </motion.div>
+          ))}
+        </div>
         
-        <motion.div 
-          className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <p>&copy; 2025 Nicholas Connelly. All rights reserved.</p>
-          <p className="mt-2 text-sm">
-            Built with React, TypeScript, and Tailwind CSS
-          </p>
-        </motion.div>
+        {/* Bottom Section */}
+        <div className="border-t border-gray-700 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              © {currentYear} Nicholas Connelly. All rights reserved.
+            </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a
+                href="https://github.com/nickconnelly10"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+                aria-label="GitHub"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a
+                href="https://twitter.com/nicklutk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+                aria-label="Twitter"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+              <a
+                href="https://nicholasconnelly.substack.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+                aria-label="Substack"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                </svg>
+              </a>
+              <a
+                href="mailto:nickconnelly10@gmail.com"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+                aria-label="Email"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
