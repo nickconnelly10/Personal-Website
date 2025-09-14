@@ -2,11 +2,12 @@
 const nextConfig = {
   images: {
     domains: ['nicholasconnelly.box'],
-    unoptimized: true
+    unoptimized: true,
+    qualities: [75, 85, 100] // Fix the Next.js 16 warning
   },
   trailingSlash: true,
   output: 'export',
-  distDir: 'dist',
+  distDir: 'out',
   // Disable image optimization for static export
   experimental: {
     optimizePackageImports: ['chart.js', 'react-chartjs-2']
