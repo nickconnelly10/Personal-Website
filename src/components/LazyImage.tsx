@@ -1,12 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import SkeletonLoader from './SkeletonLoader'
 
 interface LazyImageProps {
   src: string
   alt: string
   className?: string
-  skeletonClassName?: string
   onLoad?: () => void
   onError?: () => void
 }
@@ -15,7 +13,6 @@ const LazyImage: React.FC<LazyImageProps> = ({
   src,
   alt,
   className = '',
-  skeletonClassName = '',
   onLoad,
   onError
 }) => {
@@ -55,9 +52,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
   return (
     <div ref={imgRef} className={`relative ${className}`}>
       {!isLoaded && !hasError && isInView && (
-        <div className={`absolute inset-0 ${skeletonClassName}`}>
-          <SkeletonLoader className="w-full h-full" />
-        </div>
+        <div className="absolute inset-0 bg-gray-200 animate-pulse rounded" />
       )}
       
       {hasError ? (

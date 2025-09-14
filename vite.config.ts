@@ -15,7 +15,8 @@ export default defineConfig({
         manualChunks: {
           'react-vendor': ['react', 'react-dom'],
           'framer-motion': ['framer-motion'],
-          'intersection-observer': ['react-intersection-observer']
+          'intersection-observer': ['react-intersection-observer'],
+          'react-router': ['react-router-dom']
         }
       }
     },
@@ -23,12 +24,6 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'framer-motion', 'react-intersection-observer', 'react-router-dom']
-  },
-  esbuild: {
-    target: 'esnext',
-    minifyIdentifiers: true,
-    minifySyntax: true,
-    minifyWhitespace: true
   },
   server: {
     historyApiFallback: true
