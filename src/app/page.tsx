@@ -15,8 +15,8 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects');
+  const scrollToAbout = () => {
+    const element = document.getElementById('about');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -39,11 +39,11 @@ export default function Home() {
         <div className='absolute inset-0 bg-black bg-opacity-40'></div>
         
         <div className='flex flex-col justify-center min-h-screen relative w-full pt-20'>
-          <div className='relative z-10 max-w-4xl mx-auto px-8 w-full'>
-            <h1 className='text-4xl md:text-6xl font-light text-white leading-tight mb-8'>
+          <div className='relative z-10 max-w-4xl mx-auto container-padding w-full'>
+            <h1 className='font-light text-white leading-tight mb-8 animate-fade-in'>
               Nicholas Connelly
             </h1>
-            <p className='text-xl text-gray-200 leading-relaxed max-w-2xl'>
+            <p className='text-xl text-gray-200 leading-relaxed max-w-2xl animate-slide-up'>
               Building software to empower others and creating communities that inspire growth.
             </p>
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
         {showScrollArrow && (
           <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10'>
             <button
-              onClick={scrollToProjects}
+              onClick={scrollToAbout}
               className='text-white hover:text-gray-200 transition-colors duration-200'
             >
               <svg 
@@ -73,102 +73,27 @@ export default function Home() {
         )}
       </div>
 
-      {/* Projects Section */}
-      <section id="projects" className='py-20 bg-white'>
-        <div className='max-w-6xl mx-auto px-8'>
-          <h2 className='text-3xl md:text-4xl font-light text-gray-800 mb-16 text-center'>
-            Projects
-          </h2>
-          
-          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-            {/* Health Platform */}
-            <div className='bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-200'>
-              <h3 className='text-xl font-medium text-gray-800 mb-3'>Health Platform</h3>
-              <p className='text-gray-600 text-sm leading-relaxed mb-4'>
-                Evidence-based health protocols and resources designed to democratize health knowledge.
-              </p>
-              <div className='flex flex-wrap gap-2 mb-4'>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>React</span>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>TypeScript</span>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Vite</span>
-              </div>
-              <a 
-                href="https://health.nicholasconnelly.box" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className='text-sm text-gray-600 hover:text-gray-800 transition-colors duration-200 underline'
-              >
-                View Live →
-              </a>
-            </div>
-
-            {/* DeFi Dashboard */}
-            <div className='bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-200'>
-              <h3 className='text-xl font-medium text-gray-800 mb-3'>DeFi Dashboard</h3>
-              <p className='text-gray-600 text-sm leading-relaxed mb-4'>
-                Comprehensive DeFi analytics platform providing insights into yield farming and liquidity pools.
-              </p>
-              <div className='flex flex-wrap gap-2 mb-4'>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>React</span>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>TypeScript</span>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Chart.js</span>
-              </div>
-              <a 
-                href="https://muscadine.box" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className='text-sm text-gray-600 hover:text-gray-800 transition-colors duration-200 underline'
-              >
-                View Live →
-              </a>
-            </div>
-
-            {/* Portfolio Site */}
-            <div className='bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-200'>
-              <h3 className='text-xl font-medium text-gray-800 mb-3'>Portfolio Site</h3>
-              <p className='text-gray-600 text-sm leading-relaxed mb-4'>
-                Personal website showcasing projects, writing, and community involvement.
-              </p>
-              <div className='flex flex-wrap gap-2 mb-4'>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Next.js</span>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>TypeScript</span>
-                <span className='text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full'>Tailwind</span>
-              </div>
-              <a 
-                href="https://github.com/nickconnelly10" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className='text-sm text-gray-600 hover:text-gray-800 transition-colors duration-200 underline'
-              >
-                View Code →
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className='py-20 bg-gray-50'>
-        <div className='max-w-4xl mx-auto px-8'>
-          <h2 className='text-3xl md:text-4xl font-light text-gray-800 mb-12 text-center'>
-            About
-          </h2>
-          <div className='prose prose-lg max-w-none text-gray-600 leading-relaxed'>
-            <p className='text-lg mb-6'>
-              I'm a software developer passionate about creating technology that empowers people to take control of their health and financial well-being.
-            </p>
-            <p className='text-lg mb-6'>
-              Through my work, I focus on building tools that make complex information accessible and actionable. I believe technology should serve humanity, not the other way around.
-            </p>
+      {/* About Section - Matching Ignas's exact structure */}
+      <section id="about" className='section-padding bg-white'>
+        <div className='max-w-4xl mx-auto container-padding'>
+          <div className='prose prose-lg max-w-none text-gray-800 leading-relaxed space-y-6 animate-fade-in'>
             <p className='text-lg'>
-              When I'm not coding, you'll find me running with The Nest Running Club or writing about health, technology, and personal development on my Substack.
+              Combining my passion for health technology with a deep interest in software development gives me the full suite of tools to build impactful solutions. I've worked on a number of projects, all built with the purpose of helping others take control of their health and financial well-being.
+            </p>
+            
+            <p className='text-lg'>
+              Though the path forward is variable, my insistence on creation is not. Whatever the future looks like, I'll wake up every day with a desire to build. A desire to make the world a little bit better. A desire to make an impact. A desire to help another.
+            </p>
+            
+            <p className='text-lg'>
+              I believe we're on this earth to make, to create, to build. If you feel the same, or you'd like to collaborate on a new project, feel free to contact me. I love taking initiative and I love working with those that do.
             </p>
           </div>
           
-          <div className='text-center mt-12'>
+          <div className='text-center mt-12 animate-slide-up'>
             <a
               href='/contact'
-              className='inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors duration-200 font-medium'
+              className='btn-primary'
             >
               Get In Touch
               <svg className='ml-2 w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>

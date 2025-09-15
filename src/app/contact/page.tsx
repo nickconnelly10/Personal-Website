@@ -1,10 +1,10 @@
-export default function ConnectPage() {
+export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
-      <div className="max-w-4xl mx-auto px-8 py-20">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-light text-gray-800 leading-tight mb-8">
-            Let's connect
+      <div className="max-w-4xl mx-auto container-padding section-padding">
+        <div className="text-center mb-16 animate-fade-in">
+          <h1 className="font-light text-gray-800 leading-tight mb-8">
+            Contact
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             I'm always excited to collaborate on new projects, discuss health technology,
@@ -12,9 +12,9 @@ export default function ConnectPage() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-2xl font-medium text-gray-800 mb-6">Get in touch</h2>
+        <div className="grid md:grid-cols-2 gap-12 animate-slide-up">
+          <div className="card">
+            <h2 className="text-gray-800 mb-6">Get in touch</h2>
             <div className="space-y-4">
               <a 
                 href="mailto:nicholas@nicholasconnelly.box"
@@ -49,8 +49,8 @@ export default function ConnectPage() {
             </div>
           </div>
           
-          <div>
-            <h2 className="text-2xl font-medium text-gray-800 mb-6">What I'm working on</h2>
+          <div className="card">
+            <h2 className="text-gray-800 mb-6">What I'm working on</h2>
             <div className="space-y-4 text-gray-600">
               <p>• Building health technology platforms</p>
               <p>• Creating DeFi analytics tools</p>
