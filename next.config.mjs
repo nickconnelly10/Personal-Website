@@ -10,7 +10,8 @@ const nextConfig = {
   distDir: 'out',
   // Disable image optimization for static export
   experimental: {
-    optimizePackageImports: ['chart.js', 'react-chartjs-2']
+    optimizePackageImports: ['chart.js', 'react-chartjs-2'],
+    cssChunking: 'strict'
   }
 };
 

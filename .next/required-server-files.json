@@ -147,7 +147,7 @@
         }
       },
       "cacheHandlers": {},
-      "cssChunking": true,
+      "cssChunking": "strict",
       "multiZoneDraftMode": false,
       "appNavFailHandling": false,
       "prerenderEarlyExit": true,
