@@ -20,11 +20,14 @@ const Footer = () => {
               <Link href="/" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 Home
               </Link>
-              <Link href="/#about" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
-                About
+              <Link href="/projects" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
+                Projects
               </Link>
               <Link href="/resume" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 Resume
+              </Link>
+              <Link href="/writing" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
+                Writing
               </Link>
               <Link href="/contact" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 Contact
@@ -69,7 +72,7 @@ const Footer = () => {
                 Instagram
               </a>
               <a 
-                href="mailto:nicholas@nicholasconnelly.box"
+                href="mailto:nickconnelly10@gmail.com"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
                 Email
@@ -87,7 +90,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
-                Health Platform
+                Health
               </a>
               <a 
                 href="https://muscadine.box" 
@@ -95,15 +98,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
-                DeFi Dashboard
-              </a>
-              <a 
-                href="https://drive.google.com/drive/u/0/folders/1bMajNaE_zwYUOmwqv_-Lm3UzFlw4wsYY" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                NEST Photos
+                DeFi - Muscadine
               </a>
             </div>
           </div>

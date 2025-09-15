@@ -17,10 +17,10 @@ export default function ContactPage() {
             <h2 className="text-gray-800 mb-6">Get in touch</h2>
             <div className="space-y-4">
               <a 
-                href="mailto:nicholas@nicholasconnelly.box"
+                href="mailto:nickconnelly10@gmail.com"
                 className="block text-gray-600 hover:text-gray-800 transition-colors duration-200"
               >
-                nicholas@nicholasconnelly.box
+                nickconnelly10@gmail.com
               </a>
               <a 
                 href="https://linkedin.com/in/nicholasconnelly"

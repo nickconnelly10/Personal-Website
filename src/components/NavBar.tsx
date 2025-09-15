@@ -35,17 +35,27 @@ const NavBar = () => {
           <Link href="/">Nicholas Connelly</Link>
         </div>
         
-        {/* Desktop Navigation - Matching Ignas's simple structure */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
           <Link 
-            href="/#about" 
+            href="/" 
             className={`nav-link ${
               isHomePage 
                 ? (isScrolled ? 'text-gray-600' : 'text-white hover:text-gray-200')
                 : 'text-gray-600'
             }`}
           >
-            About
+            Home
+          </Link>
+          <Link 
+            href="/projects" 
+            className={`nav-link ${
+              isHomePage 
+                ? (isScrolled ? 'text-gray-600' : 'text-white hover:text-gray-200')
+                : 'text-gray-600'
+            }`}
+          >
+            Projects
           </Link>
           <Link 
             href="/resume" 
@@ -56,6 +66,16 @@ const NavBar = () => {
             }`}
           >
             Resume
+          </Link>
+          <Link 
+            href="/writing" 
+            className={`nav-link ${
+              isHomePage 
+                ? (isScrolled ? 'text-gray-600' : 'text-white hover:text-gray-200')
+                : 'text-gray-600'
+            }`}
+          >
+            Writing
           </Link>
           <Link 
             href="/contact" 
