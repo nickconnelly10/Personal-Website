@@ -45,66 +45,42 @@ const NavBar = () => {
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-6">
           <Link 
             href="/#projects" 
-            className={`transition-colors duration-200 ${
+            className={`text-sm transition-colors duration-200 ${
               isHomePage 
                 ? (isScrolled 
-                    ? 'text-gray-600 hover:text-gray-800' 
+                    ? 'text-gray-600 hover:text-gray-900' 
                     : 'text-white hover:text-gray-200')
-                : 'text-gray-600 hover:text-gray-800'
+                : 'text-gray-600 hover:text-gray-900'
             }`}
           >
             Projects
           </Link>
           <Link 
-            href="/#community" 
-            className={`transition-colors duration-200 ${
-              isHomePage 
-                ? (isScrolled 
-                    ? 'text-gray-600 hover:text-gray-800' 
-                    : 'text-white hover:text-gray-200')
-                : 'text-gray-600 hover:text-gray-800'
-            }`}
-          >
-            Community
-          </Link>
-          <Link 
-            href="/#writing" 
-            className={`transition-colors duration-200 ${
-              isHomePage 
-                ? (isScrolled 
-                    ? 'text-gray-600 hover:text-gray-800' 
-                    : 'text-white hover:text-gray-200')
-                : 'text-gray-600 hover:text-gray-800'
-            }`}
-          >
-            Writing
-          </Link>
-                 <Link
-                   href="/contact"
-                   className={`transition-colors duration-200 ${
-                     isHomePage
-                       ? (isScrolled
-                           ? 'text-gray-600 hover:text-gray-800'
-                           : 'text-white hover:text-gray-200')
-                       : 'text-gray-600 hover:text-gray-800'
-                   }`}
-                 >
-                   Connect
-                 </Link>
-          <Link 
             href="/resume" 
-            className={`transition-colors duration-200 ${
+            className={`text-sm transition-colors duration-200 ${
               isHomePage 
                 ? (isScrolled 
-                    ? 'text-gray-600 hover:text-gray-800' 
+                    ? 'text-gray-600 hover:text-gray-900' 
                     : 'text-white hover:text-gray-200')
-                : 'text-gray-600 hover:text-gray-800'
+                : 'text-gray-600 hover:text-gray-900'
             }`}
           >
             Resume
+          </Link>
+          <Link 
+            href="/contact" 
+            className={`text-sm transition-colors duration-200 ${
+              isHomePage 
+                ? (isScrolled 
+                    ? 'text-gray-600 hover:text-gray-900' 
+                    : 'text-white hover:text-gray-200')
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+          >
+            Connect
           </Link>
         </div>
 
@@ -153,32 +129,18 @@ const NavBar = () => {
               Projects
             </Link>
             <Link 
-              href="/#community" 
-              onClick={closeMobileMenu}
-              className="block px-6 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-200"
-            >
-              Community
-            </Link>
-            <Link 
-              href="/#writing" 
-              onClick={closeMobileMenu}
-              className="block px-6 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-200"
-            >
-              Writing
-            </Link>
-                   <Link
-                     href="/contact"
-                     onClick={closeMobileMenu}
-                     className="block px-6 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-200"
-                   >
-                     Connect
-                   </Link>
-            <Link 
               href="/resume" 
               onClick={closeMobileMenu}
               className="block px-6 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-200"
             >
               Resume
+            </Link>
+            <Link 
+              href="/contact" 
+              onClick={closeMobileMenu}
+              className="block px-6 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-200"
+            >
+              Connect
             </Link>
           </div>
         </div>
