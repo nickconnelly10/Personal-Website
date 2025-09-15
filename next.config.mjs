@@ -6,9 +6,7 @@ const nextConfig = {
     qualities: [75, 85, 100] // Fix the Next.js 16 warning
   },
   trailingSlash: true,
-  experimental: {
-    optimizePackageImports: ['chart.js', 'react-chartjs-2']
-  }
+  experimental: {}
 };
 
 export default nextConfig;
