@@ -106,7 +106,7 @@ export default function NestPage() {
           <div className="animate-slide-up">
             <div className="relative h-64 overflow-hidden rounded-lg">
               <Image
-                src="/images/nest/community-building-health-promotion.jpeg"
+                src="/images/nest/nest-run-club-activity-1.jpeg"
                 alt="NEST Health Promotion"
                 fill
                 className="object-cover"
@@ -121,13 +121,6 @@ export default function NestPage() {
         {/* Call to Action */}
         <div className="text-center animate-fade-in">
           <div className="card max-w-2xl mx-auto">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Ready to Join NEST?
-            </h2>
-            <p className="text-gray-600 mb-8">
-              Whether you're looking to start your running journey or take your fitness to the next level, 
-              NEST Run Club is here to support you every step of the way.
-            </p>
             
             {/* Social Media Links */}
             <div className="border-t border-gray-200 pt-8">
@@ -140,7 +133,7 @@ export default function NestPage() {
                   className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors duration-200"
                 >
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17v-6H8v6h3zm1-8a1 1 0 11-2 0 1 1 0 012 0zm0 8h3v-6h-3v6z"/>
+                    <path d="M13.829 12.5l-.01.01L12 14.329l-1.819-1.819-.01-.01L9.171 12.5l.01-.01L12 9.671l2.819 2.819.01.01zm-1.819-8.829L12 3.671l1.819 1.819.01.01L15.829 6.5l-.01.01L12 10.171 8.171 6.5l-.01-.01L9.171 5.5l.01-.01L12 3.671zm0 14.329l1.819-1.819.01-.01L15.829 17.5l-.01.01L12 21.171 8.171 17.5l-.01-.01L9.171 16.5l.01.01L12 18.329z"/>
                   </svg>
                   Linktree
                 </a>
@@ -151,7 +144,7 @@ export default function NestPage() {
                   className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors duration-200"
                 >
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.718-1.297c-.875.807-2.026 1.297-3.323 1.297s-2.448-.49-3.323-1.297c-.807-.875-1.297-2.026-1.297-3.323s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323z"/>
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                   Instagram
                 </a>

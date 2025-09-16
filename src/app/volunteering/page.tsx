@@ -30,7 +30,7 @@ export default function VolunteeringPage() {
           <div className="card card-hover">
             <div className="aspect-video mb-6 overflow-hidden rounded-lg">
               <Image
-                src="/images/volunteering-community/medical-mission-global-health.jpeg"
+                src="/images/volunteering-community/volunteering-activity-3.jpeg"
                 alt="Medical Mission Work"
                 width={600}
                 height={400}
@@ -61,7 +61,7 @@ export default function VolunteeringPage() {
           <div className="card card-hover">
             <div className="aspect-video mb-6 overflow-hidden rounded-lg">
               <Image
-                src="/images/volunteering-community/additional-community-service-work.jpeg"
+                src="/images/volunteering-community/volunteer-group-photo.jpeg"
                 alt="Community Service Work"
                 width={600}
                 height={400}
@@ -166,7 +166,7 @@ export default function VolunteeringPage() {
             <div className="card">
               <div className="aspect-video mb-4 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/volunteering-community/additional-community-service-work.jpeg"
+                  src="/images/volunteering-community/volunteer-group-photo.jpeg"
                   alt="Additional Community Service"
                   width={400}
                   height={300}

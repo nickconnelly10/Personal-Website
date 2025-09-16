@@ -115,7 +115,7 @@ export default function Home() {
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
                 <Image
-                  src='/images/muscadine/muscadine-platform.jpeg'
+                  src='/images/muscadine/muscadine-crypto-platform.jpeg'
                   alt='Muscadine Platform'
                   width={400}
                   height={400}
