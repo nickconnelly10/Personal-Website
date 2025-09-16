@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Nicholas Connelly",
     images: [
       {
-        url: "https://nicholasconnelly.box/images/nicholas-connelly-personal-photo.jpeg",
+        url: "https://nicholasconnelly.box/images/nick/nicholas-connelly-personal-photo.jpeg",
         width: 1200,
         height: 630,
         alt: "Nicholas Connelly",

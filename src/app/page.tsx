@@ -27,7 +27,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className='relative min-h-screen overflow-hidden'>
         <Image
-          src='/images/nicholas-connelly-personal-photo.jpeg'
+          src='/images/nick/nicholas-connelly-personal-photo.jpeg'
           alt='Nicholas Connelly'
           fill
           priority
@@ -88,7 +88,7 @@ export default function Home() {
             </p>
             
             <p className='text-lg'>
-              Outside of academics, I spend time gardening, being outdoors, and reading—often drawing inspiration from the stoics and in my faith in Jesus. My long-term path is in the medical field, where I'm pursuing studies toward becoming either a Doctor of Osteopathic Medicine (DO) or a Certified Anesthesiologist Assistant (AA).
+              Outside of academics, I spend time gardening, being outdoors, and reading—often drawing inspiration from the stoics and in my faith in Jesus. My long-term path is in the medical field, where I'm pursuing studies toward becoming a Doctor of Osteopathic Medicine (DO) in my desire to cure people from the chronic disease epidemic that has ravaged America.
             </p>
             
             <p className='text-lg'>
@@ -136,7 +136,7 @@ export default function Home() {
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
                 <Image
-                  src='/images/community-building-health-promotion.jpeg'
+                  src='/images/nest/community-building-health-promotion.jpeg'
                   alt='Health Platform'
                   width={400}
                   height={400}
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
               <h3 className='text-xl font-semibold text-gray-800 mb-3'>Health & Wellness</h3>
               <p className='text-gray-600 mb-4'>
-                This site reflects my journey in health, medicine, and holistic living, where I share insights on physiology, wellness, and philosophy inspired by Stoicism, Christianity, and nature.
+                This site reflects my journey in health, medicine, and holistic living. I also have a collection of reliable resources and protocols I use for my own health and wellbeing.
               </p>
               <a
                 href='https://health.nicholasconnelly.box'
@@ -161,7 +161,7 @@ export default function Home() {
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
                 <Image
-                  src='/images/nestrunclubgroupphoto.jpeg'
+                  src='/images/nest/nestrunclubgroupphoto.jpeg'
                   alt='NEST Run Club'
                   width={400}
                   height={400}
@@ -183,35 +183,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Substack Section */}
-      <section id="substack" className='section-padding bg-white'>
-        <div className='max-w-2xl mx-auto container-padding text-center'>
-          <div className='mb-8 animate-fade-in'>
-            <h2 className='font-light text-gray-800 leading-tight mb-4'>
-              Read My Substack
-            </h2>
-          </div>
-          
-          <div className='animate-slide-up'>
-            <a
-              href='https://nicholasconnelly.substack.com'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='btn-primary inline-flex items-center'
-            >
-              <svg className='w-5 h-5 mr-2' fill='currentColor' viewBox='0 0 24 24'>
-                <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
-              </svg>
-              Read on Substack
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Resume & Connect Section */}
+      {/* Resume, Connect & Substack Section */}
       <section className='section-padding bg-gray-50'>
-        <div className='max-w-4xl mx-auto container-padding'>
-          <div className='grid md:grid-cols-2 gap-8 animate-slide-up'>
+        <div className='max-w-6xl mx-auto container-padding'>
+          <div className='grid md:grid-cols-3 gap-8 animate-slide-up'>
             {/* Resume */}
             <div className='card text-center'>
               <div className='mb-6'>
@@ -255,6 +230,31 @@ export default function Home() {
                   <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' />
                 </svg>
                 Get In Touch
+              </a>
+            </div>
+
+            {/* Substack */}
+            <div className='card text-center'>
+              <div className='mb-6'>
+                <svg className='w-12 h-12 text-gray-600 mx-auto mb-4' fill='currentColor' viewBox='0 0 24 24'>
+                  <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
+                </svg>
+                <h3 className='text-xl font-semibold text-gray-800 mb-3'>Read My Substack</h3>
+                <p className='text-gray-600 mb-6'>
+                  Exploring health, finance, and the nature of things through writing and reflection.
+                </p>
+              </div>
+              
+              <a
+                href='https://nicholasconnelly.substack.com'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='btn-primary'
+              >
+                <svg className='w-4 h-4 mr-2' fill='currentColor' viewBox='0 0 24 24'>
+                  <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
+                </svg>
+                Read on Substack
               </a>
             </div>
           </div>
