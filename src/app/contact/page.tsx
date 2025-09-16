@@ -11,7 +11,7 @@ export default function ContactPage() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 animate-slide-up">
+        <div className="max-w-4xl mx-auto animate-slide-up">
           <div className="card">
             <h2 className="text-gray-800 mb-6">Get in touch</h2>
             <div className="space-y-6">
@@ -86,60 +86,6 @@ export default function ContactPage() {
                 </svg>
                 <span className="text-gray-800 group-hover:text-orange-600 transition-colors duration-200 font-medium">Substack</span>
               </a>
-            </div>
-          </div>
-          
-          <div className="card">
-            <h2 className="text-gray-800 mb-6">My Projects</h2>
-            <div className="space-y-4">
-              <div className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
-                <a 
-                  href="https://muscadine.box" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 transition-colors duration-200">
-                    Muscadine
-                  </h3>
-                  <p className="text-gray-600">Bitcoin, crypto security, and DeFi solutions</p>
-                </a>
-              </div>
-              <div className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
-                <a 
-                  href="https://health.nicholasconnelly.box" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 transition-colors duration-200">
-                    Health & Wellness
-                  </h3>
-                  <p className="text-gray-600">Exploring health, wellness, and holistic living</p>
-                </a>
-              </div>
-              <div className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
-                <a 
-                  href="/nest" 
-                  className="block"
-                >
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 transition-colors duration-200">
-                    NEST Run Club
-                  </h3>
-                  <p className="text-gray-600">Student-led community promoting fitness and friendship</p>
-                </a>
-              </div>
-              <div className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
-                <a 
-                  href="/volunteering" 
-                  className="block"
-                >
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 transition-colors duration-200">
-                    Volunteering & Community
-                  </h3>
-                  <p className="text-gray-600">Medical missions and community development initiatives</p>
-                </a>
-              </div>
             </div>
           </div>
         </div>

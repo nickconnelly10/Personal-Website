@@ -114,13 +114,17 @@ export default function Home() {
             </p>
           </div>
           
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-slide-up'>
+          <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-8 animate-slide-up'>
             {/* Muscadine - DeFi */}
             <div className='card card-hover'>
-              <div className='aspect-square mb-6 overflow-hidden rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center'>
-                <svg className='w-16 h-16 text-white' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1} d='M13 7h8m0 0v8m0-8l-8 8-4-4-6 6' />
-                </svg>
+              <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
+                <Image
+                  src='/images/muscadine/muscadine-platform.jpeg'
+                  alt='Muscadine Platform'
+                  width={400}
+                  height={400}
+                  className='w-full h-full object-cover'
+                />
               </div>
               <h3 className='text-xl font-semibold text-gray-800 mb-3'>Muscadine</h3>
               <p className='text-gray-600 mb-4'>
@@ -140,7 +144,7 @@ export default function Home() {
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
                 <Image
-                  src='/images/nest/community-building-health-promotion.jpeg'
+                  src='/images/health/health-wellness-platform.jpeg'
                   alt='Health Platform'
                   width={400}
                   height={400}
