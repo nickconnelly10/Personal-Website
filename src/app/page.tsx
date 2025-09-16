@@ -31,7 +31,7 @@ export default function Home() {
           alt='Nicholas Connelly'
           fill
           priority
-          className='object-cover object-center md:object-[center_35%] lg:object-[center_30%] xl:object-[center_25%]'
+          className='object-cover object-center md:object-[center_45%] lg:object-[center_40%] xl:object-[center_35%]'
           sizes='100vw'
           quality={85}
         />

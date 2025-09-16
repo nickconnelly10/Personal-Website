@@ -72,13 +72,13 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">NEST Run Club (2024–present)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Co-founded and lead service events, including Athens Marathon volunteering and ongoing community wellness activities.
+                Co-founded and lead service events, including Athens Marathon volunteering and ongoing community wellness activities. NEST has monthly community service events to contribute to local initiatives that support education, nutrition, and community development.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Dawg Day of Service & The Table Backpack Project (2023–2025)</h3>
               <p className="text-gray-600 leading-relaxed">
-                NEST has monthly community service events to contribute to local initiatives that support education, nutrition, and community development.
+                I volunteer at local UGA and oncampus ministry events to serve food and provide books for children and homeless in need in the Athens community.
               </p>
             </div>
             <div className="mt-6 grid md:grid-cols-2 gap-6">
@@ -119,17 +119,6 @@ export default function VolunteeringPage() {
               <p className="text-gray-600 leading-relaxed">
                 Creating an inclusive community that emphasizes health, consistency, and social connection, with regular volunteering tied into wellness.
               </p>
-            </div>
-            <div className="mt-6">
-              <div className="aspect-video overflow-hidden rounded-lg">
-                <Image
-                  src="/images/volunteering-community/community-service-project-1.jpeg"
-                  alt="Mentorship and Leadership"
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>
