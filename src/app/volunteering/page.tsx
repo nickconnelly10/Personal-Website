@@ -78,7 +78,7 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Dawg Day of Service & The Table Backpack Project (2023–2025)</h3>
               <p className="text-gray-600 leading-relaxed">
-                I volunteer at local UGA and oncampus ministry events to serve food and provide books for children and homeless in need in the Athens community.
+                I volunteer locally at UGA and oncampus ministry events to serve food and provide books for children and homeless in need in the Athens community.
               </p>
             </div>
             <div className="mt-6 grid md:grid-cols-2 gap-6">

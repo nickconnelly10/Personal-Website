@@ -33,7 +33,7 @@ export default function ProjectsPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Muscadine</h3>
                 <p className="text-gray-600 mb-4">
-                  Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals and communities navigate the digital economy with confidence and resilience.
+                  Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals navigate the digital economy.
                 </p>
                 <span className="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">
                   View Platform →
@@ -111,7 +111,7 @@ export default function ProjectsPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Volunteering & Service</h3>
                 <p className="text-gray-600 mb-4">
-                  My commitment to service through medical missions, community development, and local volunteer work. Focused on creating sustainable impact through collaborative efforts and compassionate leadership.
+                  My commitment to service through medical missions, community development, and local volunteer work.
                 </p>
                 <span className="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">
                   Learn More →

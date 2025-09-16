@@ -84,7 +84,7 @@ export default function Home() {
           
           <div className='prose prose-lg max-w-none text-gray-800 leading-relaxed space-y-6 animate-fade-in'>
             <p className='text-lg'>
-              I'm Nicholas Connelly, a third-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it's helping others navigate wellness, financial independence and the human body, I find purpose to always question whats around us.
+              I'm Nicholas Connelly, a third-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it's helping others navigate wellness, financial independence, and the human body, I find purpose to always question whats around us.
             </p>
             
             <p className='text-lg'>
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
               <h3 className='text-xl font-semibold text-gray-800 mb-3'>Muscadine</h3>
               <p className='text-gray-600 mb-4'>
-                Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals and communities navigate the digital economy with confidence and resilience.
+                Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals navigate the digital economy.
               </p>
               <a
                 href='https://muscadine.box'
@@ -198,7 +198,7 @@ export default function Home() {
               </div>
               <h3 className='text-xl font-semibold text-gray-800 mb-3'>Volunteering & Service</h3>
               <p className='text-gray-600 mb-4'>
-                My commitment to service through medical missions, community development, and local volunteer work. Focused on creating sustainable impact through collaborative efforts and compassionate leadership.
+                My commitment to service through medical missions, community development, and local volunteer work.
               </p>
               <a
                 href='/volunteering'
