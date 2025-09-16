@@ -40,15 +40,13 @@ const Footer = () => {
             <h4 className="text-sm font-medium text-white mb-4 uppercase tracking-wide">Connect</h4>
             <div className="space-y-2">
               <a 
-                href="https://github.com/nickconnelly10" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="/contact"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
-                GitHub
+                Contact Me
               </a>
               <a 
-                href="https://linkedin.com/in/nicholasconnelly" 
+                href="https://www.linkedin.com/in/nicholas-connelly" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
@@ -62,20 +60,6 @@ const Footer = () => {
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
                 Substack
-              </a>
-              <a 
-                href="https://instagram.com/nicholasconnelly" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                Instagram
-              </a>
-              <a 
-                href="mailto:nickconnelly10@gmail.com"
-                className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                Email
               </a>
             </div>
           </div>

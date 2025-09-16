@@ -23,7 +23,7 @@ export default function ContactPage() {
                 nickconnelly10@gmail.com
               </a>
               <a 
-                href="https://linkedin.com/in/nicholasconnelly"
+                href="https://www.linkedin.com/in/nicholas-connelly"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-gray-600 hover:text-gray-800 transition-colors duration-200"
@@ -37,6 +37,14 @@ export default function ContactPage() {
                 className="block text-gray-600 hover:text-gray-800 transition-colors duration-200"
               >
                 GitHub
+              </a>
+              <a 
+                href="https://nicholasconnelly.substack.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-600 hover:text-gray-800 transition-colors duration-200"
+              >
+                Substack
               </a>
               <a 
                 href="https://instagram.com/nicholasconnelly"
@@ -56,6 +64,38 @@ export default function ContactPage() {
               <p>• Creating DeFi analytics tools</p>
               <p>• Leading community initiatives</p>
               <p>• Writing about health and technology</p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="mt-12 animate-slide-up">
+          <div className="card">
+            <h2 className="text-gray-800 mb-6">My Projects</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg font-medium text-gray-800 mb-3">Health & Wellness</h3>
+                <a 
+                  href="https://health.nicholasconnelly.box" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 hover:text-gray-800 transition-colors duration-200 mb-2"
+                >
+                  Health Dashboard
+                </a>
+                <p className="text-sm text-gray-500">Personal health tracking and wellness resources</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-gray-800 mb-3">DeFi & Analytics</h3>
+                <a 
+                  href="https://muscadine.box" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-gray-600 hover:text-gray-800 transition-colors duration-200 mb-2"
+                >
+                  Muscadine DeFi
+                </a>
+                <p className="text-sm text-gray-500">Decentralized finance analytics and tools</p>
+              </div>
             </div>
           </div>
         </div>
