@@ -27,11 +27,11 @@ export default function Home() {
       {/* Hero Section */}
       <div className='relative min-h-screen overflow-hidden'>
         <Image
-          src='/images/nick/nicholas-connelly-personal-photo.jpeg'
+          src='/images/nick/nicholas-personal-2.jpeg'
           alt='Nicholas Connelly'
           fill
           priority
-          className='object-cover object-center object-top'
+          className='object-cover object-center md:object-[center_35%] lg:object-[center_30%] xl:object-[center_25%]'
           sizes='100vw'
           quality={85}
         />
@@ -92,11 +92,7 @@ export default function Home() {
             </p>
             
             <p className='text-lg'>
-              My volunteering journey and community development journey reflecting a commitment to health, service, and growth.
-            </p>
-            
-            <p className='text-lg'>
-              At the heart of everything I do is a simple value: helping others grow—physically, financially, and spiritually—while living in harmony with nature and truth.
+              My journey in volunteering and community development reflects a commitment to health, service, and growth. I founded Muscadine to help others navigate the emerging world of cryptography and decentralized finance, and created a personal health and wellness site to share tools for preventing lifestyle-related chronic diseases. At the core of everything I do is a simple value: helping others grow—physically, financially, and spiritually—while living in harmony with nature and truth.
             </p>
           </div>
         </div>
@@ -114,7 +110,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-8 animate-slide-up'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 animate-slide-up'>
             {/* Muscadine - DeFi */}
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
@@ -192,11 +188,12 @@ export default function Home() {
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
                 <Image
-                  src='/images/volunteering-community/medical-mission-global-health.jpeg'
+                  src='/images/volunteering-community/volunteering-activity-3.jpeg'
                   alt='Volunteering & Community Service'
                   width={400}
                   height={400}
-                  className='w-full h-full object-cover'
+                  className='w-full h-full object-cover object-center'
+                  style={{ objectPosition: 'center center' }}
                 />
               </div>
               <h3 className='text-xl font-semibold text-gray-800 mb-3'>Volunteering & Service</h3>

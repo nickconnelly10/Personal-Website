@@ -14,7 +14,7 @@ export default function ProjectsPage() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 animate-slide-up">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 animate-slide-up">
             {/* Muscadine - DeFi */}
             <div className="card card-hover">
               <div className="aspect-square mb-6 overflow-hidden rounded-lg">
@@ -92,11 +92,12 @@ export default function ProjectsPage() {
             <div className="card card-hover">
               <div className="aspect-square mb-6 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/volunteering-community/medical-mission-global-health.jpeg"
+                  src="/images/volunteering-community/volunteering-activity-3.jpeg"
                   alt="Volunteering & Community Service"
                   width={400}
                   height={400}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
+                  style={{ objectPosition: 'center center' }}
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Volunteering & Service</h3>
