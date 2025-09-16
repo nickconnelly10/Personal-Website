@@ -23,11 +23,11 @@ const Footer = () => {
               <Link href="/projects" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 Projects
               </Link>
-              <Link href="/resume" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
-                Resume
-              </Link>
               <Link href="/writing" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 Writing
+              </Link>
+              <Link href="/resume" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
+                Resume
               </Link>
               <Link href="/contact" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 Contact
@@ -74,7 +74,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
-                Health
+                Health & Wellness
               </a>
               <a 
                 href="https://muscadine.box" 
@@ -83,6 +83,14 @@ const Footer = () => {
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
                 DeFi - Muscadine
+              </a>
+              <a 
+                href="https://github.com/nickconnelly10/health.nicholasconnelly.box" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Health Repository
               </a>
             </div>
           </div>

@@ -30,16 +30,16 @@ const NavBar = () => {
             Projects
           </Link>
           <Link 
-            href="/resume" 
-            className="nav-link text-gray-600"
-          >
-            Resume
-          </Link>
-          <Link 
             href="/writing" 
             className="nav-link text-gray-600"
           >
             Writing
+          </Link>
+          <Link 
+            href="/resume" 
+            className="nav-link text-gray-600"
+          >
+            Resume
           </Link>
           <Link 
             href="/contact" 

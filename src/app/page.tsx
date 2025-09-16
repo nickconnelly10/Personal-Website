@@ -143,7 +143,7 @@ export default function Home() {
                   className='w-full h-full object-cover'
                 />
               </div>
-              <h3 className='text-xl font-semibold text-gray-800 mb-3'>Health Platform</h3>
+              <h3 className='text-xl font-semibold text-gray-800 mb-3'>Health & Wellness</h3>
               <p className='text-gray-600 mb-4'>
                 Building technology solutions for health and wellness, leading medical missions, and personal health initiatives that empower individuals and communities.
               </p>
