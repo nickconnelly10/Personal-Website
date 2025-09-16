@@ -15,7 +15,7 @@ export default function VolunteeringPage() {
           <div className="text-center">
             <h2 className="text-2xl font-semibold text-gray-800 mb-6">About</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              My volunteering and community development journey reflects a commitment to health, service, and growth. From serving on a medical mission in Peru to mentoring local students and organizing service events through NEST Run Club, I've sought to combine meaningful service with long-term impact. For me, giving back is not just about time—it's about building healthier communities and helping others grow.
+              My volunteering and community development journey reflects a commitment to health, service, and growth. From serving on a medical mission in Peru to mentoring local students and organizing service events through NEST Run Club, I've sought to combine meaningful service with long-term impact.
             </p>
           </div>
         </div>
@@ -36,6 +36,32 @@ export default function VolunteeringPage() {
                 Supporting patient care through central supply and hospital service.
               </p>
             </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Caretaking (2025–present)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Providing direct patient care for a physically disabled individual, including assistance with mobility, personal hygiene, meal preparation, and daily health needs. This experience has strengthened my compassion, attention to detail, and dedication to supporting quality of life through hands-on care.
+              </p>
+            </div>
+            <div className="mt-6 grid md:grid-cols-2 gap-6">
+              <div className="aspect-video overflow-hidden rounded-lg">
+                <Image
+                  src="/images/volunteering-community/community-outreach-event-1.jpeg"
+                  alt="Medical Mission Work"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-video overflow-hidden rounded-lg">
+                <Image
+                  src="/images/volunteering-community/community-service-project-1.jpeg"
+                  alt="Medical Service Project"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -52,8 +78,28 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Dawg Day of Service & The Table Backpack Project (2023–2025)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Contributed to local initiatives that support education, nutrition, and community development.
+                NEST has monthly community service events to contribute to local initiatives that support education, nutrition, and community development.
               </p>
+            </div>
+            <div className="mt-6 grid md:grid-cols-2 gap-6">
+              <div className="aspect-video overflow-hidden rounded-lg">
+                <Image
+                  src="/images/volunteering-community/marathon-volunteering.jpeg"
+                  alt="Marathon Volunteering"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-video overflow-hidden rounded-lg">
+                <Image
+                  src="/images/volunteering-community/community-service-project-2.jpeg"
+                  alt="Community Service Project"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -74,108 +120,21 @@ export default function VolunteeringPage() {
                 Creating an inclusive community that emphasizes health, consistency, and social connection, with regular volunteering tied into wellness.
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* Core Value */}
-        <div className="card mb-16 animate-slide-up">
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">Core Value</h2>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              At the heart of everything I do is a simple value: helping others grow—physically, financially, and spiritually—while living in harmony with nature and truth.
-            </p>
-          </div>
-        </div>
-
-        {/* Photo Gallery */}
-        <div className="mb-16 animate-slide-up">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center">Volunteer Work in Action</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
-                <Image
-                  src="/images/volunteering-community/community-outreach-event-1.jpeg"
-                  alt="Community Outreach Event"
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Community Outreach</h3>
-              <p className="text-gray-600 text-sm">Engaging with local communities through various outreach programs and events.</p>
-            </div>
-
-            <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
-                <Image
-                  src="/images/volunteering-community/volunteer-team-work.jpeg"
-                  alt="Volunteer Team Collaboration"
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Team Collaboration</h3>
-              <p className="text-gray-600 text-sm">Working alongside dedicated volunteers to make a collective impact in our communities.</p>
-            </div>
-
-            <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
+            <div className="mt-6">
+              <div className="aspect-video overflow-hidden rounded-lg">
                 <Image
                   src="/images/volunteering-community/community-service-project-1.jpeg"
-                  alt="Community Service Project"
-                  width={400}
-                  height={300}
+                  alt="Mentorship and Leadership"
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Service Projects</h3>
-              <p className="text-gray-600 text-sm">Hands-on work on various community development and service initiatives.</p>
-            </div>
-
-            <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
-                <Image
-                  src="/images/volunteering-community/community-service-project-2.jpeg"
-                  alt="Community Development Work"
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Community Development</h3>
-              <p className="text-gray-600 text-sm">Building sustainable solutions and supporting long-term community growth.</p>
-            </div>
-
-            <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
-                <Image
-                  src="/images/volunteering-community/volunteering-activity-3.jpeg"
-                  alt="Volunteer Group"
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Volunteer Community</h3>
-              <p className="text-gray-600 text-sm">Building connections and fostering a strong sense of community among volunteers.</p>
-            </div>
-
-            <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
-                <Image
-                  src="/images/volunteering-community/community-service-project-2.jpeg"
-                  alt="Additional Community Service"
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Ongoing Impact</h3>
-              <p className="text-gray-600 text-sm">Continuing to serve and make a positive difference in the lives of others.</p>
             </div>
           </div>
         </div>
+
+
 
       </div>
     </div>
