@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function VolunteeringPage() {
   return (
@@ -9,83 +8,82 @@ export default function VolunteeringPage() {
           <h1 className="font-light text-gray-800 leading-tight mb-8">
             Volunteering & Community Development
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            My journey in service reflects a deep commitment to health, community development, and helping others grow. Through various initiatives, I've worked to create positive impact both locally and globally.
-          </p>
         </div>
 
-        {/* Mission Statement */}
+        {/* About */}
         <div className="card mb-16 animate-slide-up">
           <div className="text-center">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">My Commitment to Service</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6">About</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              My service journey spans from medical missions in Peru to mentoring high school students and leading the NEST Run Club at UGA. Through hospital volunteering and community organizing, I've learned that meaningful impact comes from showing up consistently—whether it's providing healthcare in underserved communities or fostering wellness through running. These experiences have shaped my belief that service isn't just about giving back, but about growing alongside the communities I serve.
+              My volunteering and community development journey reflects a commitment to health, service, and growth. From serving on a medical mission in Peru to mentoring local students and organizing service events through NEST Run Club, I've sought to combine meaningful service with long-term impact. For me, giving back is not just about time—it's about building healthier communities and helping others grow.
             </p>
           </div>
         </div>
 
-        {/* Main Initiatives */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* Medical Mission Work */}
-          <div className="card card-hover">
-            <div className="aspect-video mb-6 overflow-hidden rounded-lg">
-              <Image
-                src="/images/volunteering-community/volunteering-activity-3.jpeg"
-                alt="Medical Mission Work"
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
-              />
+        {/* Medical & Health Service */}
+        <div className="card mb-16 animate-slide-up">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-8">Medical & Health Service</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">UGA MedLife Peru Mission Trip (2025)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Assisted in building community greenhouses, planting crops, and participating in local celebrations. Shadowed dentists, doctors, and nurses while taking vitals, supporting patient care, and educating the community on wellness.
+              </p>
             </div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Medical Mission Work</h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Participating in medical missions and global health initiatives to provide healthcare access to underserved communities. This work combines my passion for medicine with direct service to those who need it most, while learning about healthcare delivery in resource-limited settings.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-6">
-              <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Global Health</span>
-              <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Medical Service</span>
-              <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Community Outreach</span>
-            </div>
-            <div className="space-y-3">
-              <h4 className="font-semibold text-gray-800">Key Experiences:</h4>
-              <ul className="text-gray-600 space-y-2 text-sm">
-                <li>• Providing basic medical care in underserved communities</li>
-                <li>• Health education and prevention programs</li>
-                <li>• Working with local healthcare providers and organizations</li>
-                <li>• Understanding healthcare challenges in different cultural contexts</li>
-              </ul>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">St. Mary's Hospital Volunteering (2025–present)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Supporting patient care through central supply and hospital service.
+              </p>
             </div>
           </div>
+        </div>
 
-          {/* Community Service Initiatives */}
-          <div className="card card-hover">
-            <div className="aspect-video mb-6 overflow-hidden rounded-lg">
-              <Image
-                src="/images/volunteering-community/volunteer-group-photo.jpeg"
-                alt="Community Service Work"
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
-              />
+        {/* Local Community Engagement */}
+        <div className="card mb-16 animate-slide-up">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-8">Local Community Engagement</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">NEST Run Club (2024–present)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Co-founded and lead service events, including Athens Marathon volunteering and ongoing community wellness activities.
+              </p>
             </div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Community Service Initiatives</h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Leading and participating in various community service projects that address local needs. From organizing volunteer events to supporting community development programs, I focus on creating sustainable impact through collaborative efforts.
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Dawg Day of Service & The Table Backpack Project (2023–2025)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Contributed to local initiatives that support education, nutrition, and community development.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Mentorship & Leadership */}
+        <div className="card mb-16 animate-slide-up">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-8">Mentorship & Leadership</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Clarke County Mentorship Program (2025–present)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Mentor to a local high school student, providing guidance and support in academics and personal growth.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Leadership Through NEST Run Club</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Creating an inclusive community that emphasizes health, consistency, and social connection, with regular volunteering tied into wellness.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Core Value */}
+        <div className="card mb-16 animate-slide-up">
+          <div className="text-center">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6">Core Value</h2>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
+              At the heart of everything I do is a simple value: helping others grow—physically, financially, and spiritually—while living in harmony with nature and truth.
             </p>
-            <div className="flex flex-wrap gap-2 mb-6">
-              <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">Local Impact</span>
-              <span className="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">Leadership</span>
-              <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">Community Building</span>
-            </div>
-            <div className="space-y-3">
-              <h4 className="font-semibold text-gray-800">Key Activities:</h4>
-              <ul className="text-gray-600 space-y-2 text-sm">
-                <li>• Organizing community health and wellness events</li>
-                <li>• Coordinating volunteer teams for local projects</li>
-                <li>• Supporting food security and housing initiatives</li>
-                <li>• Mentoring and educational support programs</li>
-              </ul>
-            </div>
           </div>
         </div>
 
@@ -152,7 +150,7 @@ export default function VolunteeringPage() {
             <div className="card">
               <div className="aspect-video mb-4 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/volunteering-community/volunteer-group-photo.jpeg"
+                  src="/images/volunteering-community/volunteering-activity-3.jpeg"
                   alt="Volunteer Group"
                   width={400}
                   height={300}
@@ -166,7 +164,7 @@ export default function VolunteeringPage() {
             <div className="card">
               <div className="aspect-video mb-4 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/volunteering-community/volunteer-group-photo.jpeg"
+                  src="/images/volunteering-community/community-service-project-2.jpeg"
                   alt="Additional Community Service"
                   width={400}
                   height={300}
