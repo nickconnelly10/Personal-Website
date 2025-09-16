@@ -92,59 +92,55 @@ export default function NestPage() {
           <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center">NEST Run Club in Action</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
+              <div className="aspect-square mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="/images/nest/nest-run-club-activity-1.jpeg"
                   alt="NEST Run Club Activity"
-                  width={400}
-                  height={300}
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">Group Activities</h3>
-              <p className="text-gray-600 text-sm">Building community through shared experiences and group runs.</p>
             </div>
 
             <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
+              <div className="aspect-square mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="/images/nest/nest-run-club-activity-2.jpeg"
                   alt="NEST Run Club Huddle"
-                  width={400}
-                  height={300}
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">Team Spirit</h3>
-              <p className="text-gray-600 text-sm">Coming together in unity and supporting each other's goals.</p>
             </div>
 
             <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
+              <div className="aspect-square mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="/images/nest/nest-run-club-activity-3.jpeg"
                   alt="NEST Run Club Running"
-                  width={400}
-                  height={300}
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">Active Running</h3>
-              <p className="text-gray-600 text-sm">Promoting fitness and wellness through regular running activities.</p>
             </div>
 
             <div className="card">
-              <div className="aspect-video mb-4 overflow-hidden rounded-lg">
+              <div className="aspect-square mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="/images/nest/nestrunclubgroupphoto.jpeg"
                   alt="NEST Run Club Group Photo"
-                  width={400}
-                  height={300}
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">Community</h3>
-              <p className="text-gray-600 text-sm">A diverse and welcoming community of runners and friends.</p>
             </div>
           </div>
         </div>

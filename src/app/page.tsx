@@ -92,7 +92,7 @@ export default function Home() {
             </p>
             
             <p className='text-lg'>
-              My journey in volunteering and community development reflects a commitment to health, service, and growth. I founded Muscadine to help others navigate the emerging world of cryptography and decentralized finance, and created a personal health and wellness site to share tools for preventing lifestyle-related chronic diseases. At the core of everything I do is a simple value: helping others grow—physically, financially, and spiritually—while living in harmony with nature and truth.
+              I founded Muscadine to help others navigate the emerging world of cryptography and decentralized finance, and created a personal health and wellness site to share tools for preventing lifestyle-related chronic diseases. My commitment to health and community led me to create NEST Run Club which has led to a massive new cultural shift at UGA. At the core of everything I do is a simple value: helping others, while living in the nature of truth.
             </p>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
                 <Image
-                  src='/images/muscadine/muscadine-crypto-platform.jpeg'
+                  src='/images/muscadine/Bitcoin.svg.png'
                   alt='Muscadine Platform'
                   width={400}
                   height={400}

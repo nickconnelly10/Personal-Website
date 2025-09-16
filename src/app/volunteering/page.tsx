@@ -19,7 +19,7 @@ export default function VolunteeringPage() {
           <div className="text-center">
             <h2 className="text-2xl font-semibold text-gray-800 mb-6">My Commitment to Service</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Service is at the core of who I am. Whether through medical missions, community organizing, or local volunteer work, I believe in the power of collective action to create meaningful change. My approach combines hands-on service with strategic community development to address both immediate needs and long-term growth.
+              My service journey spans from medical missions in Peru to mentoring high school students and leading the NEST Run Club at UGA. Through hospital volunteering and community organizing, I've learned that meaningful impact comes from showing up consistently—whether it's providing healthcare in underserved communities or fostering wellness through running. These experiences have shaped my belief that service isn't just about giving back, but about growing alongside the communities I serve.
             </p>
           </div>
         </div>
