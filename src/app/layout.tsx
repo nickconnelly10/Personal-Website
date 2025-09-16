@@ -17,10 +17,11 @@ export const metadata: Metadata = {
     siteName: "Nicholas Connelly",
     images: [
       {
-        url: "https://nicholasconnelly.box/images/nick/nicholas-connelly-personal-photo.jpeg",
+        url: "https://nicholasconnelly.box/images/nick/nicholas-personal-2.jpeg?w=1200&h=630&fit=crop&crop=center",
         width: 1200,
         height: 630,
         alt: "Nicholas Connelly",
+        type: "image/jpeg",
       },
     ],
     locale: "en_US",
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nicholas Connelly - Health and Financial Self-Sovereignty",
     description: "Dedicated to all forms of creation. Building software, creating health solutions, and writing to make the world a little better.",
+    images: ["https://nicholasconnelly.box/images/nick/nicholas-personal-2.jpeg?w=1200&h=630&fit=crop&crop=center"],
     creator: "@nicklutk",
   },
   keywords: ["DeFi", "Bitcoin", "Health", "Medicine", "Self-Sovereignty", "Finance", "Crypto", "Medical Student"],
