@@ -10,7 +10,7 @@ export default function NestPage() {
             NEST Run Club
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Building community through running and wellness, creating spaces for people to grow, connect, and achieve their goals.
+            The NEST Run Club is a student-led community at the University of Georgia that brings people together through weekly runs, promoting both the physical benefits of exercise while fostering friendship, consistency, and growth.
           </p>
         </div>
         

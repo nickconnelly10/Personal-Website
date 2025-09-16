@@ -7,8 +7,7 @@ export default function ContactPage() {
             Contact
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            I'm always excited to collaborate on new projects, discuss health technology,
-            or simply connect with like-minded creators.
+            Whether it's health, finance, or philosophy, I enjoy connecting with others who share a passion for growth.
           </p>
         </div>
         

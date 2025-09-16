@@ -9,7 +9,7 @@ export default function WritingPage() {
             Writing & Thoughts
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Sharing insights on health technology, personal development, and the intersection of technology and human well-being.
+            Exploring health, finance, and the nature of things through writing and reflection.
           </p>
         </div>
         
@@ -20,7 +20,7 @@ export default function WritingPage() {
             </svg>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Read My Latest Articles</h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              I write about health technology, personal development, and building meaningful projects that create positive impact.
+              I write about health, finance, philosophy, and the intersection of these areas with personal growth and nature.
             </p>
           </div>
           
@@ -45,9 +45,9 @@ export default function WritingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">Health Technology</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Health & Wellness</h3>
             <p className="text-gray-600">
-              Exploring the intersection of technology and healthcare, and how we can build better tools for wellness.
+              Exploring physiology, wellness, and the intersection of health with philosophy and nature.
             </p>
           </div>
 
@@ -57,9 +57,9 @@ export default function WritingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">Personal Development</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Finance & Philosophy</h3>
             <p className="text-gray-600">
-              Sharing lessons learned on building habits, achieving goals, and creating meaningful change in life.
+              Exploring financial independence, Stoic principles, and the nature of things through a Christian worldview.
             </p>
           </div>
 
@@ -69,9 +69,9 @@ export default function WritingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">Building & Creating</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Nature & Growth</h3>
             <p className="text-gray-600">
-              Thoughts on the creative process, entrepreneurship, and building projects that make a difference.
+              Reflections on living in harmony with nature, personal growth, and finding truth in the world around us.
             </p>
           </div>
         </div>

@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-medium text-white mb-4">Nicholas Connelly</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Dedicated to all forms of creation. Building software, creating health solutions, and writing to make the world a little better.
+              Exploring health, finance, and the nature of things
             </p>
           </div>
           

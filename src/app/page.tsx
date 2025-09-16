@@ -44,7 +44,7 @@ export default function Home() {
               Nicholas Connelly
             </h1>
             <p className='text-xl text-gray-200 leading-relaxed max-w-2xl animate-slide-up'>
-              Building software to empower others and creating communities that inspire growth.
+              Exploring health, finance, and the nature of things
             </p>
           </div>
         </div>
@@ -84,15 +84,15 @@ export default function Home() {
           
           <div className='prose prose-lg max-w-none text-gray-800 leading-relaxed space-y-6 animate-fade-in'>
             <p className='text-lg'>
-              Combining my passion for health technology with a deep interest in software development gives me the full suite of tools to build impactful solutions. I've worked on a number of projects, all built with the purpose of helping others take control of their health and financial well-being.
+              I'm Nicholas Connelly, a third-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it's helping others navigate wellness, financial independence and the human body, I find purpose to always question whats around us.
             </p>
             
             <p className='text-lg'>
-              Though the path forward is variable, my insistence on creation is not. Whatever the future looks like, I'll wake up every day with a desire to build. A desire to make the world a little bit better. A desire to make an impact. A desire to help another.
+              Outside of academics, I spend time gardening, being outdoors, and reading—often drawing inspiration from the stoics and in my faith in Jesus. My long-term path is in the medical field, where I'm pursuing studies toward becoming either a Doctor of Osteopathic Medicine (DO) or a Certified Anesthesiologist Assistant (AA).
             </p>
             
             <p className='text-lg'>
-              I believe we're on this earth to make, to create, to build. If you feel the same, or you'd like to collaborate on a new project, feel free to contact me. I love taking initiative and I love working with those that do.
+              At the heart of everything I do is a simple value: helping others grow—physically, financially, and spiritually—while living in harmony with nature and truth.
             </p>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function Home() {
               </div>
               <h3 className='text-xl font-semibold text-gray-800 mb-3'>Muscadine</h3>
               <p className='text-gray-600 mb-4'>
-                DeFi analytics platform helping users navigate the decentralized finance ecosystem with data-driven insights.
+                Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals and communities navigate the digital economy with confidence and resilience.
               </p>
               <a
                 href='https://muscadine.box'
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
               <h3 className='text-xl font-semibold text-gray-800 mb-3'>Health & Wellness</h3>
               <p className='text-gray-600 mb-4'>
-                Building technology solutions for health and wellness, leading medical missions, and personal health initiatives that empower individuals and communities.
+                This site reflects my journey in health, medicine, and holistic living, where I share insights on physiology, wellness, and philosophy inspired by Stoicism, Christianity, and nature.
               </p>
               <a
                 href='https://health.muscadine.box'
@@ -170,7 +170,7 @@ export default function Home() {
               </div>
               <h3 className='text-xl font-semibold text-gray-800 mb-3'>NEST Run Club</h3>
               <p className='text-gray-600 mb-4'>
-                Community building through running and wellness, creating spaces for people to grow, connect, and achieve their goals.
+                The NEST Run Club is a student-led community at the University of Georgia that brings people together through weekly runs, promoting both the physical benefits of exercise while fostering friendship, consistency, and growth.
               </p>
               <a
                 href='/nest'
@@ -220,7 +220,7 @@ export default function Home() {
                 </svg>
                 <h3 className='text-xl font-semibold text-gray-800 mb-3'>Resume</h3>
                 <p className='text-gray-600 mb-6'>
-                  View my professional background and experience in health technology and software development.
+                  View my professional background and experience.
                 </p>
               </div>
               
@@ -243,7 +243,7 @@ export default function Home() {
                 </svg>
                 <h3 className='text-xl font-semibold text-gray-800 mb-3'>Connect</h3>
                 <p className='text-gray-600 mb-6'>
-                  Ready to collaborate on new projects or discuss opportunities? Let's connect.
+                  Whether it's health, finance, or philosophy, I enjoy connecting with others who share a passion for growth
                 </p>
               </div>
               

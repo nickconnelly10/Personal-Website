@@ -10,7 +10,7 @@ export default function ProjectsPage() {
             Projects & Initiatives
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A collection of my work in health technology, community building, and global health initiatives.
+            A collection of my work exploring health, finance, and the nature of things through various projects and initiatives.
           </p>
         </div>
         
@@ -24,7 +24,7 @@ export default function ProjectsPage() {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Muscadine</h3>
             <p className="text-gray-600 mb-4">
-              DeFi analytics platform helping users navigate the decentralized finance ecosystem with data-driven insights.
+              Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals and communities navigate the digital economy with confidence and resilience.
             </p>
             <a
               href="https://muscadine.box"
@@ -49,7 +49,7 @@ export default function ProjectsPage() {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Health Platform</h3>
             <p className="text-gray-600 mb-4">
-              Building technology solutions for health and wellness, leading medical missions, and personal health initiatives that empower individuals and communities.
+              This site reflects my journey in health, medicine, and holistic living, where I share insights on physiology, wellness, and philosophy inspired by Stoicism, Christianity, and nature.
             </p>
             <a
               href="https://health.muscadine.box"
@@ -74,7 +74,7 @@ export default function ProjectsPage() {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-3">NEST Run Club</h3>
             <p className="text-gray-600 mb-4">
-              Community building through running and wellness, creating spaces for people to grow, connect, and achieve their goals.
+              The NEST Run Club is a student-led community at the University of Georgia that brings people together through weekly runs, promoting both the physical benefits of exercise while fostering friendship, consistency, and growth.
             </p>
             <a
               href="/nest"
@@ -92,7 +92,7 @@ export default function ProjectsPage() {
               Interested in Collaborating?
             </h2>
             <p className="text-gray-600 mb-8">
-              I'm always excited to discuss new projects, partnerships, and opportunities to make a positive impact.
+              Whether it's health, finance, or philosophy, I enjoy connecting with others who share a passion for growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
