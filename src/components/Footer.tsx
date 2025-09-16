@@ -69,6 +69,14 @@ const Footer = () => {
             <h4 className="text-sm font-medium text-white mb-4 uppercase tracking-wide">Resources</h4>
             <div className="space-y-2">
               <a 
+                href="https://muscadine.box" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Muscadine
+              </a>
+              <a 
                 href="https://health.nicholasconnelly.box" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -77,20 +85,16 @@ const Footer = () => {
                 Health & Wellness
               </a>
               <a 
-                href="https://muscadine.box" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="/nest" 
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
-                DeFi - Muscadine
+                NEST Run Club
               </a>
               <a 
-                href="https://github.com/nickconnelly10/health.nicholasconnelly.box" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="/volunteering" 
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
-                Health Repository
+                Volunteering & Community
               </a>
             </div>
           </div>

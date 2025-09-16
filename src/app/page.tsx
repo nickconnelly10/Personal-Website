@@ -114,7 +114,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-slide-up'>
             {/* Muscadine - DeFi */}
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center'>
@@ -183,6 +183,29 @@ export default function Home() {
                 Learn More →
               </a>
             </div>
+
+            {/* Volunteering */}
+            <div className='card card-hover'>
+              <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
+                <Image
+                  src='/images/volunteering-community/medical-mission-global-health.jpeg'
+                  alt='Volunteering & Community Service'
+                  width={400}
+                  height={400}
+                  className='w-full h-full object-cover'
+                />
+              </div>
+              <h3 className='text-xl font-semibold text-gray-800 mb-3'>Volunteering & Service</h3>
+              <p className='text-gray-600 mb-4'>
+                My commitment to service through medical missions, community development, and local volunteer work. Focused on creating sustainable impact through collaborative efforts and compassionate leadership.
+              </p>
+              <a
+                href='/volunteering'
+                className='text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium'
+              >
+                Learn More →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -191,6 +214,31 @@ export default function Home() {
       <section className='section-padding bg-gray-50'>
         <div className='max-w-6xl mx-auto container-padding'>
           <div className='grid md:grid-cols-3 gap-8 animate-slide-up'>
+            {/* Substack */}
+            <div className='card text-center'>
+              <div className='mb-6'>
+                <svg className='w-12 h-12 text-gray-600 mx-auto mb-4' fill='currentColor' viewBox='0 0 24 24'>
+                  <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
+                </svg>
+                <h3 className='text-xl font-semibold text-gray-800 mb-3'>Read My Substack</h3>
+                <p className='text-gray-600 mb-6'>
+                  Exploring health, finance, and the nature of things through writing and reflection.
+                </p>
+              </div>
+              
+              <a
+                href='https://nicholasconnelly.substack.com'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='btn-primary'
+              >
+                <svg className='w-4 h-4 mr-2' fill='currentColor' viewBox='0 0 24 24'>
+                  <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
+                </svg>
+                Read on Substack
+              </a>
+            </div>
+
             {/* Resume */}
             <div className='card text-center'>
               <div className='mb-6'>
@@ -234,31 +282,6 @@ export default function Home() {
                   <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' />
                 </svg>
                 Get In Touch
-              </a>
-            </div>
-
-            {/* Substack */}
-            <div className='card text-center'>
-              <div className='mb-6'>
-                <svg className='w-12 h-12 text-gray-600 mx-auto mb-4' fill='currentColor' viewBox='0 0 24 24'>
-                  <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
-                </svg>
-                <h3 className='text-xl font-semibold text-gray-800 mb-3'>Read My Substack</h3>
-                <p className='text-gray-600 mb-6'>
-                  Exploring health, finance, and the nature of things through writing and reflection.
-                </p>
-              </div>
-              
-              <a
-                href='https://nicholasconnelly.substack.com'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='btn-primary'
-              >
-                <svg className='w-4 h-4 mr-2' fill='currentColor' viewBox='0 0 24 24'>
-                  <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
-                </svg>
-                Read on Substack
               </a>
             </div>
           </div>
