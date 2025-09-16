@@ -165,7 +165,7 @@ export default function Home() {
             <div className='card card-hover'>
               <div className='aspect-square mb-6 overflow-hidden rounded-lg'>
                 <Image
-                  src='/images/nest/nestrunclubgroupphoto.jpeg'
+                  src='/images/nest/nest-run-club-activity-2.jpeg'
                   alt='NEST Run Club'
                   width={400}
                   height={400}
