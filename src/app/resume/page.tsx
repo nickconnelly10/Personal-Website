@@ -12,7 +12,7 @@ export default function ResumePage() {
             Resume
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            My professional background and experience in health technology and software development.
+            My professional background and experience.
           </p>
         </div>
         

@@ -31,7 +31,7 @@ export default function Home() {
           alt='Nicholas Connelly'
           fill
           priority
-          className='object-cover'
+          className='object-cover object-center object-top'
           sizes='100vw'
           quality={85}
         />
@@ -243,7 +243,7 @@ export default function Home() {
                 </svg>
                 <h3 className='text-xl font-semibold text-gray-800 mb-3'>Connect</h3>
                 <p className='text-gray-600 mb-6'>
-                  Whether it's health, finance, or philosophy, I enjoy connecting with others who share a passion for growth
+                  Whether it's health, finance, or anything else inbetween, I enjoy connecting with others who share a passion for growth
                 </p>
               </div>
               

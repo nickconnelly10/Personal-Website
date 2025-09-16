@@ -7,7 +7,7 @@ export default function ContactPage() {
             Contact
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Whether it's health, finance, or philosophy, I enjoy connecting with others who share a passion for growth.
+            Whether it's health, finance, or anything else inbetween, I enjoy connecting with others who share a passion for growth.
           </p>
         </div>
         
@@ -63,58 +63,60 @@ export default function ContactPage() {
                 </a>
                 
                 <a 
-                  href="https://nicholasconnelly.substack.com"
+                  href="https://instagram.com/nicholasconnelly"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-4 bg-orange-50 hover:bg-orange-100 rounded-lg transition-colors duration-200 group"
+                  className="flex items-center p-4 bg-pink-50 hover:bg-pink-100 rounded-lg transition-colors duration-200 group"
                 >
-                  <svg className="w-5 h-5 text-orange-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                  <svg className="w-5 h-5 text-pink-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.718-1.297c-.875.807-2.026 1.297-3.323 1.297s-2.448-.49-3.323-1.297c-.807-.875-1.297-2.026-1.297-3.323s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323z"/>
                   </svg>
-                  <span className="text-gray-800 group-hover:text-orange-600 transition-colors duration-200 font-medium">Substack</span>
+                  <span className="text-gray-800 group-hover:text-pink-600 transition-colors duration-200 font-medium">Instagram</span>
                 </a>
               </div>
               
               <a 
-                href="https://instagram.com/nicholasconnelly"
+                href="https://nicholasconnelly.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center p-4 bg-pink-50 hover:bg-pink-100 rounded-lg transition-colors duration-200 group"
+                className="flex items-center p-4 bg-orange-50 hover:bg-orange-100 rounded-lg transition-colors duration-200 group"
               >
-                <svg className="w-5 h-5 text-pink-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.718-1.297c-.875.807-2.026 1.297-3.323 1.297s-2.448-.49-3.323-1.297c-.807-.875-1.297-2.026-1.297-3.323s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323z"/>
+                <svg className="w-5 h-5 text-orange-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
                 </svg>
-                <span className="text-gray-800 group-hover:text-pink-600 transition-colors duration-200 font-medium">Instagram</span>
+                <span className="text-gray-800 group-hover:text-orange-600 transition-colors duration-200 font-medium">Substack</span>
               </a>
             </div>
           </div>
           
           <div className="card">
             <h2 className="text-gray-800 mb-6">My Projects</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-lg font-medium text-gray-800 mb-3">Health & Wellness</h3>
+            <div className="space-y-4">
+              <div className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                 <a 
                   href="https://health.nicholasconnelly.box" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-600 hover:text-gray-800 transition-colors duration-200 mb-2"
+                  className="block"
                 >
-                  Health Dashboard
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 transition-colors duration-200">
+                    Health & Wellness
+                  </h3>
+                  <p className="text-gray-600">Exploring health, wellness, and holistic living</p>
                 </a>
-                <p className="text-sm text-gray-500">Exploring health, wellness, and holistic living</p>
               </div>
-              <div>
-                <h3 className="text-lg font-medium text-gray-800 mb-3">Finance & Technology</h3>
+              <div className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                 <a 
                   href="https://muscadine.box" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block text-gray-600 hover:text-gray-800 transition-colors duration-200 mb-2"
+                  className="block"
                 >
-                  Muscadine
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 transition-colors duration-200">
+                    Muscadine
+                  </h3>
+                  <p className="text-gray-600">Bitcoin, crypto security, and DeFi solutions</p>
                 </a>
-                <p className="text-sm text-gray-500">Bitcoin, crypto security, and DeFi solutions</p>
               </div>
             </div>
           </div>
