@@ -133,7 +133,7 @@ export default function NestPage() {
               Whether you're looking to start your running journey or take your fitness to the next level, 
               NEST Run Club is here to support you every step of the way.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
                 href="/contact"
                 className="btn-primary"
@@ -149,6 +149,51 @@ export default function NestPage() {
               >
                 Back to Home
               </Link>
+            </div>
+            
+            {/* Social Media Links */}
+            <div className="border-t border-gray-200 pt-8">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Follow NEST Run Club</h3>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://www.instagram.com/nestrunclub/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors duration-200"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.718-1.297c-.875.807-2.026 1.297-3.323 1.297s-2.448-.49-3.323-1.297c-.807-.875-1.297-2.026-1.297-3.323s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323z"/>
+                  </svg>
+                  Instagram
+                </a>
+                <a
+                  href="https://www.strava.com/clubs/nestrunclub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors duration-200"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.599h4.172L10.463 0l-7.13 14.172h4.169"/>
+                  </svg>
+                  Strava
+                </a>
+              </div>
+              <p className="text-sm text-gray-500 mt-4 text-center">
+                Join our community on social media for updates, photos, and running activities!
+              </p>
+              
+              {/* Strava Activity Feed */}
+              <div className="mt-8 flex justify-center">
+                <iframe 
+                  allowTransparency={true} 
+                  frameBorder="0" 
+                  height="160" 
+                  scrolling="no" 
+                  src="https://www.strava.com/clubs/1284036/latest-rides/d1fef7f441c5fc4894f0308226fa46da1465ff16?show_rides=false" 
+                  width="300"
+                  className="rounded-lg shadow-sm"
+                />
+              </div>
             </div>
           </div>
         </div>
