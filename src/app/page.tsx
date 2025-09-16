@@ -92,6 +92,10 @@ export default function Home() {
             </p>
             
             <p className='text-lg'>
+              My volunteering journey and community development journey reflecting a commitment to health, service, and growth.
+            </p>
+            
+            <p className='text-lg'>
               At the heart of everything I do is a simple value: helping others grow—physically, financially, and spiritually—while living in harmony with nature and truth.
             </p>
           </div>
