@@ -18,7 +18,7 @@ export default function NestPage() {
         <div className="mb-16 animate-slide-up">
           <div className="relative h-96 md:h-[500px] overflow-hidden rounded-lg">
             <Image
-              src="/images/the-nest-run-club-group-photo.jpeg"
+              src="/images/nestrunclubgroupphoto.jpeg"
               alt="NEST Run Club Group Photo"
               fill
               className="object-cover"

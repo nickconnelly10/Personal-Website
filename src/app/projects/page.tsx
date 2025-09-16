@@ -40,7 +40,7 @@ export default function ProjectsPage() {
           <div className="card card-hover">
             <div className="aspect-square mb-6 overflow-hidden rounded-lg">
               <Image
-                src="/images/medical-mission-global-health.jpeg"
+                src="/images/community-building-health-promotion.jpeg"
                 alt="Health Platform"
                 width={400}
                 height={400}
@@ -52,7 +52,7 @@ export default function ProjectsPage() {
               This site reflects my journey in health, medicine, and holistic living, where I share insights on physiology, wellness, and philosophy inspired by Stoicism, Christianity, and nature.
             </p>
             <a
-              href="https://health.muscadine.box"
+              href="https://health.nicholasconnelly.box"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium"
@@ -65,7 +65,7 @@ export default function ProjectsPage() {
           <div className="card card-hover">
             <div className="aspect-square mb-6 overflow-hidden rounded-lg">
               <Image
-                src="/images/the-nest-run-club-group-photo.jpeg"
+                src="/images/nestrunclubgroupphoto.jpeg"
                 alt="NEST Run Club"
                 width={400}
                 height={400}
