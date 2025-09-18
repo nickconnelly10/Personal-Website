@@ -6,13 +6,13 @@ import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Nicholas Connelly",
-  description: "Dedicated to all forms of creation. Building software, creating health solutions, and writing to make the world a little better.",
+  description: "Exploring health, finance, and the nature of things.",
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: "Nicholas Connelly - Health and Financial Self-Sovereignty",
-    description: "Dedicated to all forms of creation. Building software, creating health solutions, and writing to make the world a little better.",
+    title: "Nicholas Connelly",
+    description: "Exploring health, finance, and the nature of things.",
     url: "https://nicholasconnelly.box",
     siteName: "Nicholas Connelly",
     images: [
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nicholas Connelly - Health and Financial Self-Sovereignty",
-    description: "Dedicated to all forms of creation. Building software, creating health solutions, and writing to make the world a little better.",
+    title: "Nicholas Connelly",
+    description: "Exploring health, finance, and the nature of things.",
     images: ["https://nicholasconnelly.box/images/nick/nicholas-personal-2.jpeg?w=1200&h=630&fit=crop&crop=center"],
     creator: "@nicklutk",
   },
-  keywords: ["DeFi", "Bitcoin", "Health", "Medicine", "Self-Sovereignty", "Finance", "Crypto", "Medical Student"],
+  keywords: ["DeFi", "Bitcoin", "Health", "Medicine", "Finance", "Crypto", "Medical Student"],
   authors: [{ name: "Nicholas Connelly" }],
   robots: "index, follow",
 };
