@@ -127,7 +127,7 @@ export default function Home() {
                 Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals navigate the digital economy.
               </p>
               <a
-                href='https://muscadine.box'
+                href='https://muscadine.io'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium'
@@ -152,7 +152,7 @@ export default function Home() {
                 This site reflects my journey in health, medicine, and holistic living. I also have a collection of reliable resources and protocols I use for my own health and wellbeing.
               </p>
               <a
-                href='https://health.nicholasconnelly.box'
+                href='https://health.nickconnelly.com'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium'

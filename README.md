@@ -80,7 +80,7 @@ npm run preview
    npx vercel --prod
    ```
 
-3. **Custom Domain**: Set to `nicholasconnelly.box` in the Vercel dashboard
+3. **Custom Domain**: Set to `nickconnelly.com` in the Vercel dashboard
 
 ## 📁 Project Structure
 
@@ -105,14 +105,14 @@ The site uses a custom professional theme with:
 ## 🔗 Related Projects
 
 This site is part of the Muscadine ecosystem:
-- **Health Dashboard**: `https://health.nicholasconnelly.box`
-- **DeFi Dashboard**: `https://defi.nicholasconnelly.box`
+- **Health Dashboard**: `https://health.nickconnelly.com`
+- **DeFi Dashboard**: `https://defi.nickconnelly.com`
 
 ## 🌐 Domain Configuration
 
 This repository serves the following domains:
-- **Primary**: `https://nicholasconnelly.box`
-- **WWW**: `https://www.nicholasconnelly.box`
+- **Primary**: `https://nickconnelly.com`
+- **WWW**: `https://www.nickconnelly.com`
 
 ## 📄 Legal Pages
 

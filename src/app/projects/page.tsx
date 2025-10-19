@@ -16,7 +16,7 @@ export default function ProjectsPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 animate-slide-up">
             {/* Muscadine - DeFi */}
             <a
-              href="https://muscadine.box"
+              href="https://muscadine.io"
               target="_blank"
               rel="noopener noreferrer"
               className="block"
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
 
             {/* Health Platform */}
             <a
-              href="https://health.nicholasconnelly.box"
+              href="https://health.nickconnelly.com"
               target="_blank"
               rel="noopener noreferrer"
               className="block"

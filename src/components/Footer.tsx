@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -69,7 +70,7 @@ const Footer = () => {
             <h4 className="text-sm font-medium text-white mb-4 uppercase tracking-wide">Resources</h4>
             <div className="space-y-2">
               <a 
-                href="https://muscadine.box" 
+                href="https://muscadine.io" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
@@ -77,7 +78,7 @@ const Footer = () => {
                 Muscadine
               </a>
               <a 
-                href="https://health.nicholasconnelly.box" 
+                href="https://health.nickconnelly.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
