@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -25,17 +24,11 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "Nicholas Connelly",
-    description: "Exploring health, finance, and the nature of things.",
-    url: "https://nickconnelly.com",
     siteName: "Nicholas Connelly",
     images: [
       {
-        url: "/images/nick/og-image.jpeg",
-        width: 1200,
-        height: 630,
+        url: "/images/nick/nicholas-personal-2.jpeg",
         alt: "Nicholas Connelly",
-        type: "image/jpeg",
       },
     ],
     locale: "en_US",
@@ -43,9 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nicholas Connelly",
-    description: "Exploring health, finance, and the nature of things.",
-    images: ["/images/nick/og-image.jpeg"],
+    images: ["/images/nick/nicholas-personal-2.jpeg"],
     creator: "@nicklutk",
   },
   keywords: ["DeFi", "Bitcoin", "Health", "Medicine", "Finance", "Crypto", "Medical Student"],
@@ -69,7 +60,6 @@ export default function RootLayout({
         </a>
         <NavBar />
         <main id="main-content">{children}</main>
-        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>

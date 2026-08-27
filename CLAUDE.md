@@ -6,17 +6,17 @@ Personal portfolio site for **Nicholas Connelly** ([nickconnelly.com](https://ni
 
 | Item | Value |
 |------|--------|
-| Version | 1.0.2 |
-| Node | `>=20.19.0` (see `.nvmrc`) |
+| Version | See `package.json` |
+| Node | `24.x` (see `.nvmrc` and `engines`) |
 | Package manager | npm (`package-lock.json`) |
 | Framework | Next.js 16 App Router |
-| UI | React 19, Tailwind CSS v4 |
+| UI | React 19, Tailwind CSS v4, Inter via `next/font` |
 | Deploy | Vercel (`vercel.json` → `framework: nextjs`) |
 
 ```bash
 npm install
 npm run dev      # http://localhost:3000
-npm run lint     # eslint src
+npm run lint     # eslint src --max-warnings 0
 npm run build    # production build
 ```
 
@@ -25,75 +25,58 @@ npm run build    # production build
 ```
 src/
 ├── app/                    # App Router routes (one page.tsx per route)
-│   ├── layout.tsx          # Root layout: NavBar, Footer, Analytics, fonts, metadata
-│   ├── globals.css         # Tailwind v4 @theme, utility classes (.card, .section-padding, etc.)
-│   ├── page.tsx            # Home (client component, hero + about sections)
+│   ├── layout.tsx          # Root layout: NavBar, Analytics, fonts, metadata
+│   ├── globals.css         # Tailwind v4 @theme, utility classes
+│   ├── page.tsx            # Home (RSC, hero + about + projects)
 │   ├── contact/
-│   ├── nest/               # NEST Run Club
+│   ├── nest/
 │   ├── projects/
 │   ├── resume/
 │   ├── volunteering/
-│   └── writing/
-└── components/
-    ├── NavBar.tsx          # Client: fixed top nav, mobile menu
-    ├── Footer.tsx          # Site map + external links (4 columns)
-    └── SubstackArticles.tsx # Client: fetches Substack RSS via rss2json API
+│   ├── not-found.tsx
+│   ├── sitemap.ts
+│   └── robots.ts
+├── components/
+│   ├── NavBar.tsx          # Client: fixed top nav, mobile menu
+│   └── ProjectCard.tsx     # Shared project cards + projects array
+└── lib/
+    └── metadata.ts         # Per-page Open Graph / Twitter helper
 
-public/                     # Static assets (images, favicon, manifest, resume PDFs)
-next.config.mjs             # trailingSlash: true, unoptimized images
+public/                     # Static assets (images, favicon, manifest, resume PDF)
+next.config.mjs             # trailingSlash: true, image optimization, security headers
 ```
 
 ## Routes (all static)
 
 | Path | Purpose |
 |------|---------|
-| `/` | Home — hero image, about copy |
-| `/projects` | Project cards (Muscadine, health site, etc.; many external links) |
-| `/writing` | Substack article preview + link to full newsletter |
-| `/resume` | Resume content / downloads |
-| `/contact` | Contact page |
+| `/` | Home — hero image, about copy, project cards |
+| `/projects` | Project cards |
+| `/resume` | Resume PDF open/download (iframe on desktop) |
+| `/contact` | Contact links |
 | `/nest` | NEST Run Club |
 | `/volunteering` | Volunteering & community |
-
-There are **no** `/privacy` or `/terms` pages (removed in v1.0.2).
 
 URLs use **trailing slashes** (`trailingSlash: true` in `next.config.mjs`).
 
 ## Architecture patterns
 
-- **Most pages are Server Components**; `'use client'` only where needed (home hero interactions, `NavBar`, `SubstackArticles`).
-- **Global chrome**: `src/app/layout.tsx` wraps every page with `NavBar` and `Footer`.
-- **Styling**: Tailwind v4 via `@import "tailwindcss"` in `globals.css`. Custom design tokens in `@theme` (gold palette, Playfair Display + Inter). Reusable classes: `.container-padding`, `.section-padding`, `.card`, `.card-hover`, `.nav-link`, `.animate-fade-in`, `.animate-slide-up`.
-- **Images**: `next/image` with `public/` paths; `images.unoptimized: true` in config.
-- **External content**: Writing page pulls `https://nicholasconnelly.substack.com/feed` through `https://api.rss2json.com/v1/api.json` (client-side, no API routes in this repo).
+- **Server Components by default**; `'use client'` only for `NavBar` (pathname, mobile menu).
+- **Global chrome**: `NavBar` only (footer removed).
+- **Metadata**: `metadataBase` + shared OG image in layout; per-page metadata via `src/lib/metadata.ts`.
+- **Images**: `next/image` with optimized delivery; large originals in `public/`.
 - **Analytics**: `@vercel/analytics` and `@vercel/speed-insights` in root layout.
-
-## Key external properties (linked, not in this repo)
-
-- [muscadine.xyz](https://muscadine.xyz) — DeFi project
-- [health.nickconnelly.com](https://health.nickconnelly.com) — Health & wellness
-- [nicholasconnelly.substack.com](https://nicholasconnelly.substack.com) — Newsletter
-- LinkedIn, contact flows as linked from footer/nav
 
 ## Conventions for changes
 
-- Match existing tone: light serif headings (`font-light`), gray body text, white sections, dark footer (`bg-gray-900`).
-- New top-level pages: add `src/app/<route>/page.tsx`, link from `NavBar.tsx` and `Footer.tsx` if they should be discoverable.
-- Prefer server components unless the page needs hooks or browser APIs.
+- Match existing tone: light headings (`font-light`), gray body text, white sections.
+- New top-level pages: add `src/app/<route>/page.tsx` and link from `NavBar.tsx` if discoverable.
 - Run `npm run lint` then `npm run build` before finishing substantive edits.
-- Do not add legal/policy pages unless explicitly requested.
 - Keep diffs small; no database, env secrets, or API routes unless the task requires them.
 
 ## ESLint
 
-Flat config in `eslint.config.mjs` — lints `src/**/*.ts(x)` only; ignores `.next`, `node_modules`, `out`.
-
-## What this repo is not
-
-- No CMS, Supabase, or user accounts
-- No `src/app/api/` routes
-- No test suite in package.json scripts
-- Legal pages (privacy/terms) were intentionally removed; footer has no Legal column
+Flat config in `eslint.config.mjs` — `eslint-config-next/core-web-vitals`; lints `src/**/*.ts(x)`.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const links = [
   { href: '/', label: 'Home' },
@@ -19,6 +19,7 @@ function isActive(pathname: string, href: string) {
 const NavBar = () => {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
@@ -26,12 +27,28 @@ const NavBar = () => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setIsMobileMenuOpen(false);
     };
+    const onPointerDown = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    const onResize = () => {
+      if (window.matchMedia('(min-width: 768px)').matches) {
+        setIsMobileMenuOpen(false);
+      }
+    };
     window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
+    document.addEventListener('mousedown', onPointerDown);
+    window.addEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      document.removeEventListener('mousedown', onPointerDown);
+      window.removeEventListener('resize', onResize);
+    };
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 p-4 bg-white shadow-sm">
+    <nav ref={menuRef} aria-label="Primary" className="fixed top-0 left-0 w-full z-50 p-4 bg-white shadow-sm">
       <div className="w-full flex justify-between items-center max-w-6xl mx-auto">
         <div className="text-xl font-medium text-gray-800">
           <Link href="/">Nicholas Connelly</Link>
@@ -53,7 +70,7 @@ const NavBar = () => {
         <button
           type="button"
           onClick={() => setIsMobileMenuOpen((open) => !open)}
-          className="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-800 hover:bg-gray-100 transition-colors duration-200"
+          className="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-800 hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
           aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isMobileMenuOpen}
           aria-controls="mobile-navigation"
@@ -75,7 +92,11 @@ const NavBar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-3 py-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-md transition-colors duration-200"
+                className={`block px-3 py-2 rounded-md transition-colors duration-200 ${
+                  isActive(pathname, link.href)
+                    ? 'text-gray-900 font-semibold bg-gray-50'
+                    : 'text-gray-600 hover:text-gray-800 hover:bg-gray-100'
+                }`}
                 onClick={closeMobileMenu}
                 aria-current={isActive(pathname, link.href) ? 'page' : undefined}
               >

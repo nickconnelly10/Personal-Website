@@ -31,6 +31,7 @@ export default function ProjectCard({
           alt={imageAlt}
           width={400}
           height={400}
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
           className={`w-full h-full object-cover ${objectPosition ?? "object-center"}`}
         />
       </div>
@@ -44,7 +45,13 @@ export default function ProjectCard({
 
   if (external) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+        aria-label={`${title} (opens in new tab)`}
+      >
         {content}
       </a>
     );

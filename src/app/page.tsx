@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ProjectCard, { projects } from "../components/ProjectCard";
+import { pageMetadata } from "../lib/metadata";
 
-export const metadata: Metadata = {
-  title: { absolute: "Nicholas Connelly" },
+export const metadata: Metadata = pageMetadata({
+  absoluteTitle: "Nicholas Connelly",
   description: "Exploring health, finance, and the nature of things.",
-  alternates: { canonical: "/" },
-};
+  path: "/",
+});
 
 export default function Home() {
   return (
@@ -19,7 +20,6 @@ export default function Home() {
           priority
           className="object-cover object-[center_25%] md:object-[center_30%] lg:object-[center_35%]"
           sizes="100vw"
-          quality={85}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/20" />
 

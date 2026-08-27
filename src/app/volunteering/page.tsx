@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from 'next/image';
+import { pageMetadata } from "../../lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Volunteering",
   description: "Medical missions, community service, and local volunteer work by Nicholas Connelly.",
-  alternates: { canonical: "/volunteering/" },
-};
+  path: "/volunteering/",
+});
 
 export default function VolunteeringPage() {
   return (
@@ -46,7 +47,8 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Personal Care Assistant (2024–present)</h3>
               <p className="text-gray-600 leading-relaxed">
-              Providing direct patient care for a physically disabled individual, including assistance with mobility, personal hygiene, meal preparation, and daily health needs. This experience has strengthened my compassion, attention to detail, and dedication to supporting quality of life through hands-on care.              </p>
+                Providing direct patient care for a physically disabled individual, including assistance with mobility, personal hygiene, meal preparation, and daily health needs. This experience has strengthened my compassion, attention to detail, and dedication to supporting quality of life through hands-on care.
+              </p>
             </div>
             <div className="mt-6 grid md:grid-cols-2 gap-6">
               <div className="aspect-video overflow-hidden rounded-lg">
@@ -55,6 +57,7 @@ export default function VolunteeringPage() {
                   alt="Medical Mission Work"
                   width={600}
                   height={400}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -64,6 +67,7 @@ export default function VolunteeringPage() {
                   alt="Medical Service Project"
                   width={600}
                   height={400}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -125,6 +129,7 @@ export default function VolunteeringPage() {
                   alt="Marathon Volunteering"
                   width={600}
                   height={400}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -134,6 +139,7 @@ export default function VolunteeringPage() {
                   alt="Community Service Project"
                   width={600}
                   height={400}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-full object-cover"
                 />
               </div>

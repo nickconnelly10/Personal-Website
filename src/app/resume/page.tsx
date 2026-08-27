@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Resume",
   description: "Professional background and experience for Nicholas Connelly.",
-  alternates: { canonical: "/resume/" },
-};
+  path: "/resume/",
+});
 
 const RESUME_URL = "/resume/nicholas-connelly-resume.pdf";
 
@@ -29,6 +30,7 @@ export default function ResumePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary text-sm"
+                  aria-label="Open resume in new tab"
                 >
                   Open in New Tab
                 </a>
@@ -38,11 +40,16 @@ export default function ResumePage() {
               </div>
             </div>
           </div>
-          <iframe
-            src={`${RESUME_URL}#toolbar=1&navpanes=1&scrollbar=1`}
-            className="w-full h-screen border-0"
-            title="Nicholas Connelly Resume"
-          />
+          <div className="hidden md:block">
+            <iframe
+              src={`${RESUME_URL}#toolbar=1&navpanes=1&scrollbar=1`}
+              className="w-full h-screen border-0"
+              title="Nicholas Connelly Resume"
+            />
+          </div>
+          <div className="md:hidden px-6 py-8 text-center text-gray-600 text-sm">
+            <p>Use the buttons above to open or download the PDF on mobile.</p>
+          </div>
         </div>
       </div>
     </div>
