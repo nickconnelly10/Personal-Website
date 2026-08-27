@@ -1,16 +1,15 @@
-import tsParser from "@typescript-eslint/parser";
+import nextVitals from "eslint-config-next/core-web-vitals";
 
-export default [
-  { ignores: [".next/**", "node_modules/**", "out/**"] },
+const eslintConfig = [
+  ...nextVitals,
   {
-    files: ["**/*.ts", "**/*.tsx"],
-    languageOptions: {
-      parser: tsParser,
-      parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-        ecmaFeatures: { jsx: true },
-      },
+    ignores: [".next/**", "node_modules/**", "out/**"],
+  },
+  {
+    rules: {
+      "react/no-unescaped-entities": "off",
     },
   },
 ];
+
+export default eslintConfig;

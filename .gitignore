@@ -33,6 +33,7 @@ node_modules
 
 # Build cache and optimization
 .tsbuildinfo
+*.tsbuildinfo
 .cache
 
 # Next.js

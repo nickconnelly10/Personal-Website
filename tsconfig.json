@@ -3,7 +3,7 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "es6"
+      "es2022"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -21,12 +21,6 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
     "target": "ES2022",
     "useDefineForClassFields": true,
     "forceConsistentCasingInFileNames": true

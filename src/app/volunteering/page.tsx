@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Volunteering",
+  description: "Medical missions, community service, and local volunteer work by Nicholas Connelly.",
+  alternates: { canonical: "/volunteering/" },
+};
 
 export default function VolunteeringPage() {
   return (
@@ -71,7 +78,7 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Lifeguard (2020–2022)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Pool lifeguard at a neighborhood pool. As my first job at 15 years old, I learned responsibility, safety, and supervision. Learned the basics of first aid and CRP, while being adaptive for emergencies.
+                Pool lifeguard at a neighborhood pool. As my first job at 15 years old, I learned responsibility, safety, and supervision. Learned the basics of first aid and CPR, while being adaptive for emergencies.
               </p>
             </div>
             <div>

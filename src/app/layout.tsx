@@ -1,17 +1,29 @@
 import React from "react";
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+});
+
 export const metadata: Metadata = {
-  title: "Nicholas Connelly",
+  metadataBase: new URL("https://nickconnelly.com"),
+  title: {
+    default: "Nicholas Connelly",
+    template: "%s | Nicholas Connelly",
+  },
   description: "Exploring health, finance, and the nature of things.",
   icons: {
-    icon: '/favicon.svg',
+    icon: "/favicon.svg",
   },
+  manifest: "/manifest.json",
   openGraph: {
     title: "Nicholas Connelly",
     description: "Exploring health, finance, and the nature of things.",
@@ -19,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Nicholas Connelly",
     images: [
       {
-        url: "https://nickconnelly.com/images/nick/nicholas-personal-2.jpeg?w=1200&h=630&fit=crop&crop=center",
+        url: "/images/nick/og-image.jpeg",
         width: 1200,
         height: 630,
         alt: "Nicholas Connelly",
@@ -33,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nicholas Connelly",
     description: "Exploring health, finance, and the nature of things.",
-    images: ["https://nickconnelly.com/images/nick/nicholas-personal-2.jpeg?w=1200&h=630&fit=crop&crop=center"],
+    images: ["/images/nick/og-image.jpeg"],
     creator: "@nicklutk",
   },
   keywords: ["DeFi", "Bitcoin", "Health", "Medicine", "Finance", "Crypto", "Medical Student"],
@@ -47,19 +59,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <link rel="canonical" href="https://nickconnelly.com" />
-      </head>
-      <body className="antialiased">
-        <NavBar/>
-        {children}
-        <Footer/>
-        <Analytics/>
-        <SpeedInsights/>
+    <html lang="en" className={inter.variable}>
+      <body className={`${inter.className} antialiased`}>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:px-4 focus:py-2 focus:rounded-md"
+        >
+          Skip to content
+        </a>
+        <NavBar />
+        <main id="main-content">{children}</main>
+        <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

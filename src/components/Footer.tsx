@@ -37,12 +37,12 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-medium text-white mb-4 uppercase tracking-wide">Connect</h4>
             <div className="space-y-2">
-              <a 
+              <Link
                 href="/contact"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
                 Contact
-              </a>
+              </Link>
               <a 
                 href="https://www.linkedin.com/in/nicholas-connelly" 
                 target="_blank" 
@@ -82,25 +82,25 @@ const Footer = () => {
               >
                 Health & Wellness
               </a>
-              <a 
-                href="/nest" 
+              <Link
+                href="/nest"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
                 NEST Run Club
-              </a>
-              <a 
-                href="/volunteering" 
+              </Link>
+              <Link
+                href="/volunteering"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
                 Volunteering & Community
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Nicholas Connelly. All rights reserved.
+            © 2026 Nicholas Connelly. All rights reserved.
           </p>
         </div>
       </div>

@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "NEST Run Club",
+  description: "Student-led running community at the University of Georgia founded by Nicholas Connelly.",
+  alternates: { canonical: "/nest/" },
+};
 
 export default function NestPage() {
   return (
@@ -31,7 +38,7 @@ export default function NestPage() {
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div className="animate-fade-in">
             <h2 className="text-2xl font-semibold text-gray-800 mb-6">About NEST</h2>
-            <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-4">
+            <div className="max-w-none text-gray-600 leading-relaxed space-y-4">
               <p>
                 NEST Run Club is more than just a running group—it's a social club built on growth, connection, and wellness. We believe physical activity is the foundation for personal development and meaningful relationships, and we pair every run with 30 minutes of pre-run chat time to strengthen community bonds.
               </p>

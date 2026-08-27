@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch with Nicholas Connelly.",
+  alternates: { canonical: "/contact/" },
+};
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -7,14 +15,14 @@ export default function ContactPage() {
             Contact
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Whether it's health, finance, or anything else inbetween, I enjoy connecting with others.
+            Whether it&apos;s health, finance, or anything else in between, I enjoy connecting with others.
           </p>
         </div>
         
         <div className="max-w-4xl mx-auto animate-slide-up">
           <div className="card">
             <h2 className="text-gray-800 mb-6">Get in touch</h2>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a 
                 href="mailto:nickconnelly10@gmail.com"
                 className="flex items-center p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors duration-200 group"
