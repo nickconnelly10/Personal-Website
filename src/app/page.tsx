@@ -45,7 +45,7 @@ export default function Home() {
 
           <div className="max-w-none text-gray-800 leading-relaxed space-y-6 animate-fade-in">
             <p className="text-lg">
-              I&apos;m Nick Connelly, a third-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it&apos;s helping others navigate wellness, finances, and the human body, I find purpose to always question what&apos;s around us.
+              I&apos;m Nick Connelly, a fourth-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it&apos;s helping others navigate wellness, finances, and the human body, I find purpose to always question what&apos;s around us.
             </p>
             <p className="text-lg">
               Outside of academics, I spend time gardening, being outdoors, and reading—often drawing inspiration from the stoics and in my faith in Jesus. My long-term path is in the medical field, where I&apos;m pursuing studies toward becoming a certified Anesthesiology Assistant (CAA).
