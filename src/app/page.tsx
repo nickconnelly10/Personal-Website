@@ -21,7 +21,7 @@ export default function Home() {
           className="object-cover object-[center_25%] md:object-[center_30%] lg:object-[center_35%]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/15 to-black/5" />
 
         <div className="flex flex-col min-h-screen relative w-full pt-20">
           <div className="relative z-10 max-w-4xl mx-auto container-padding w-full mt-36 md:mt-44">
